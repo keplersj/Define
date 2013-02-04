@@ -87,6 +87,8 @@
 		E6A7C18416BF81260010FB8E /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E6A7C18516BF82270010FB8E /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E6A7C18616BF82270010FB8E /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E6A7C18716BF836E0010FB8E /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E6A7C18816BF836E0010FB8E /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E6AF4F5B163E469700EE5E1B /* DictonaryPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictonaryPadViewController.h; sourceTree = "<group>"; };
 		E6AF4F5C163E469700EE5E1B /* DictonaryPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictonaryPadViewController.m; sourceTree = "<group>"; };
 		E6B9B581164A37C200FD43BC /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 				sv,
 				pt,
 				nl,
+				cs,
 			);
 			mainGroup = E63227E415D2B9730081C230;
 			productRefGroup = E63227F015D2B9740081C230 /* Products */;
@@ -406,6 +409,7 @@
 				E62BE47716BE628E00583F21 /* sv */,
 				E6A7C18416BF81260010FB8E /* pt */,
 				E6A7C18616BF82270010FB8E /* nl */,
+				E6A7C18816BF836E0010FB8E /* cs */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -437,6 +441,7 @@
 				E62BE47616BE628E00583F21 /* sv */,
 				E6A7C18316BF81260010FB8E /* pt */,
 				E6A7C18516BF82270010FB8E /* nl */,
+				E6A7C18716BF836E0010FB8E /* cs */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

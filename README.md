@@ -4,6 +4,7 @@ Define
 The world's fastest most lightweight dictionary application for iOS.
 
 definingSiri Requires iOSOpenDev for Xcode: http://iosopendev.com
+
 On the App Store: https://itunes.apple.com/tr/app/define-lightweight-fast-dictionary/id564677354?mt=8
 
 License

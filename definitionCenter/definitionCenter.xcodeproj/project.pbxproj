@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E6B68EB916C0E27700710EC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B68EB816C0E27700710EC3 /* Foundation.framework */; };
+		E6B68EBB16C0E27700710EC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B68EBA16C0E27700710EC3 /* UIKit.framework */; };
+		E6B68EC616C0E27800710EC3 /* definitionCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B68EC516C0E27800710EC3 /* definitionCenterController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E6B68EB816C0E27700710EC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E6B68EBA16C0E27700710EC3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E6B68EBF16C0E27700710EC3 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		E6B68EC016C0E27800710EC3 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		E6B68EC216C0E27800710EC3 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		E6B68EC316C0E27800710EC3 /* definitionCenter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "definitionCenter-Prefix.pch"; sourceTree = "<group>"; };
+		E6B68EC416C0E27800710EC3 /* definitionCenterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = definitionCenterController.h; sourceTree = "<group>"; };
+		E6B68EC516C0E27800710EC3 /* definitionCenterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = definitionCenterController.m; sourceTree = "<group>"; };
+		E6B68ECB16C0E27800710EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Package/System/Library/WeeAppPlugins/definitionCenter.bundle/Info.plist; sourceTree = "<group>"; };
+		E6B68ECC16C0E27900710EC3 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Package/System/Library/WeeAppPlugins/definitionCenter.bundle/InfoPlist.strings; sourceTree = "<group>"; };
+		E6B68ECD16C0E27900710EC3 /* WeeAppBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WeeAppBackground@2x.png"; path = "Package/System/Library/WeeAppPlugins/definitionCenter.bundle/WeeAppBackground@2x.png"; sourceTree = "<group>"; };
+		E6B68ECE16C0E27900710EC3 /* WeeAppBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WeeAppBackground.png; path = Package/System/Library/WeeAppPlugins/definitionCenter.bundle/WeeAppBackground.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6B68EB316C0E27700710EC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B68EB916C0E27700710EC3 /* Foundation.framework in Frameworks */,
+				E6B68EBB16C0E27700710EC3 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E6B68EAD16C0E27700710EC3 = {
+			isa = PBXGroup;
+			children = (
+				E6B68EBC16C0E27700710EC3 /* definitionCenter */,
+				E6B68EB716C0E27700710EC3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E6B68EB716C0E27700710EC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6B68EB816C0E27700710EC3 /* Foundation.framework */,
+				E6B68EBA16C0E27700710EC3 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6B68EBC16C0E27700710EC3 /* definitionCenter */ = {
+			isa = PBXGroup;
+			children = (
+				E6B68EC416C0E27800710EC3 /* definitionCenterController.h */,
+				E6B68EC516C0E27800710EC3 /* definitionCenterController.m */,
+				E6B68EBD16C0E27700710EC3 /* Package */,
+				E6B68EC116C0E27800710EC3 /* Supporting Files */,
+			);
+			path = definitionCenter;
+			sourceTree = "<group>";
+		};
+		E6B68EBD16C0E27700710EC3 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				E6B68EBE16C0E27700710EC3 /* DEBIAN */,
+				E6B68EC716C0E27800710EC3 /* System */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		E6B68EBE16C0E27700710EC3 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				E6B68EBF16C0E27700710EC3 /* control.txt */,
+				E6B68EC016C0E27800710EC3 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		E6B68EC116C0E27800710EC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6B68EC216C0E27800710EC3 /* PackageVersion.plist */,
+				E6B68EC316C0E27800710EC3 /* definitionCenter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E6B68EC716C0E27800710EC3 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				E6B68EC816C0E27800710EC3 /* Library */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		E6B68EC816C0E27800710EC3 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E6B68EC916C0E27800710EC3 /* WeeAppPlugins */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		E6B68EC916C0E27800710EC3 /* WeeAppPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				E6B68ECA16C0E27800710EC3 /* ___PACKAGENAME___ */,
+			);
+			name = WeeAppPlugins;
+			sourceTree = "<group>";
+		};
+		E6B68ECA16C0E27800710EC3 /* ___PACKAGENAME___ */ = {
+			isa = PBXGroup;
+			children = (
+				E6B68ECB16C0E27800710EC3 /* Info.plist */,
+				E6B68ECC16C0E27900710EC3 /* InfoPlist.strings */,
+				E6B68ECD16C0E27900710EC3 /* WeeAppBackground@2x.png */,
+				E6B68ECE16C0E27900710EC3 /* WeeAppBackground.png */,
+			);
+			name = "___PACKAGENAME___";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E6B68EB416C0E27700710EC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E6B68EB616C0E27700710EC3 /* definitionCenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6B68ED116C0E27900710EC3 /* Build configuration list for PBXNativeTarget "definitionCenter" */;
+			buildPhases = (
+				E6B68EB216C0E27700710EC3 /* Sources */,
+				E6B68EB316C0E27700710EC3 /* Frameworks */,
+				E6B68EB416C0E27700710EC3 /* Headers */,
+				E6B68EB516C0E27700710EC3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = definitionCenter;
+			productName = definitionCenter;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6B68EAE16C0E27700710EC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = E6B68EB116C0E27700710EC3 /* Build configuration list for PBXProject "definitionCenter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E6B68EAD16C0E27700710EC3;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6B68EB616C0E27700710EC3 /* definitionCenter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E6B68EB516C0E27700710EC3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6B68EB216C0E27700710EC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B68EC616C0E27800710EC3 /* definitionCenterController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E6B68ECF16C0E27900710EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		E6B68ED016C0E27900710EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		E6B68ED216C0E27900710EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = definitionCenter;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "definitionCenter/definitionCenter-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/definitionCenter.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		E6B68ED316C0E27900710EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = definitionCenter;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "definitionCenter/definitionCenter-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/definitionCenter.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6B68EB116C0E27700710EC3 /* Build configuration list for PBXProject "definitionCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6B68ECF16C0E27900710EC3 /* Debug */,
+				E6B68ED016C0E27900710EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6B68ED116C0E27900710EC3 /* Build configuration list for PBXNativeTarget "definitionCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6B68ED216C0E27900710EC3 /* Debug */,
+				E6B68ED316C0E27900710EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6B68EAE16C0E27700710EC3 /* Project object */;
+}

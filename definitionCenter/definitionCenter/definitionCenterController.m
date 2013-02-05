@@ -21,8 +21,6 @@
 
 -(void)dealloc
 {
-	[_view release];
-	[super dealloc];
 }
 
 - (UIView *)view
@@ -35,7 +33,6 @@
 		UIImageView *bgView = [[UIImageView alloc] initWithImage:bg];
 		bgView.frame = CGRectMake(0, 0, 316, 71);
 		[_view addSubview:bgView];
-		[bgView release];
 
 		UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 316, 71)];
 		lbl.backgroundColor = [UIColor clearColor];
@@ -43,7 +40,6 @@
 		lbl.text = @"Hello, World!";
 		lbl.textAlignment = UITextAlignmentCenter;
 		[_view addSubview:lbl];
-		[lbl release];
 	}
 
 	return _view;

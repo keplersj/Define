@@ -2,7 +2,7 @@
 //  definitionCenterController.m
 //  definitionCenter
 //
-//  Created by Kepler Sticka-Jones on 2/4/13.
+//  Created by Kepler Sticka-Jones on 2/5/13.
 //  Copyright (c) 2013 __MyCompanyName__. All rights reserved.
 //
 
@@ -21,6 +21,8 @@
 
 -(void)dealloc
 {
+	[_view release];
+	[super dealloc];
 }
 
 - (UIView *)view
@@ -33,13 +35,21 @@
 		UIImageView *bgView = [[UIImageView alloc] initWithImage:bg];
 		bgView.frame = CGRectMake(0, 0, 316, 71);
 		[_view addSubview:bgView];
+		[bgView release];
 
-		UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 316, 71)];
+		/*
+        UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 316, 71)];
 		lbl.backgroundColor = [UIColor clearColor];
 		lbl.textColor = [UIColor whiteColor];
 		lbl.text = @"Hello, World!";
 		lbl.textAlignment = UITextAlignmentCenter;
 		[_view addSubview:lbl];
+		[lbl release];
+         */
+        
+        UITextField *termField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 316, 71)];
+        [_view addSubview:termField];
+        [termField release];
 	}
 
 	return _view;

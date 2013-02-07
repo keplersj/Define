@@ -18,3 +18,8 @@ DerivedData
 
 #Finder
 ._*
+
+#iOSOpenDev
+LatestBuild
+*/Packages/*
+Package

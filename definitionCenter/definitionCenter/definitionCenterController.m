@@ -47,7 +47,8 @@
 		[lbl release];
          */
         
-        UITextField *termField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 316, 71)];
+        UITextField *termField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 300, 71)];
+        UIButton *lookUpButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 16, 71)];
         [_view addSubview:termField];
         [termField release];
 	}

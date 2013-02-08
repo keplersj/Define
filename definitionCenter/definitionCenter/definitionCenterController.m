@@ -51,6 +51,8 @@
          */
         
         UITextField *termField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 300, 71)];
+        //We now have control over the keyboard
+        [termField setDelegate:self];
         UIButton *lookUpButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 16, 71)];
         [_view addSubview:termField];
         [_view addSubview:lookUpButton];
@@ -64,6 +66,12 @@
 	return 71.0f;
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)termField
+{
+    [BackEnd LookUp:self.termField.text];
+    return YES;
+}
+
 -(void)displayDefinition: (NSNotification *)notification
 {
     NSLog(@"You should probably set up the definition view");
@@ -71,7 +79,8 @@
 
 -(void)noTerm: (NSNotification *)notification
 {
-    NSLog(@"There was no term found in the box. You should probably set up the error view.");
+    NSLog(@"There was no term found in the box. Now dismissing keyboard.");
+    [termField endEditing:YES];
 }
 
 -(void)noDef: (NSNotification *)notification

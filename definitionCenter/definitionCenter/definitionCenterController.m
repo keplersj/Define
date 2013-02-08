@@ -9,6 +9,7 @@
 #import "definitionCenterController.h"
 
 @implementation definitionCenterController
+@synthesize termField;
 
 -(id)init
 {

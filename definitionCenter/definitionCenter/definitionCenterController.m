@@ -22,6 +22,8 @@
 
 - (UIView *)view
 {
+    //Starting up engine
+    [BackEnd startUp];
 	if (_view == nil)
 	{
 		_view = [[UIView alloc] initWithFrame:CGRectMake(2, 0, 316, 71)];

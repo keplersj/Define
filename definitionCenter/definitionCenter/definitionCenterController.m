@@ -19,11 +19,6 @@
 	return self;
 }
 
--(void)dealloc
-{
-	[_view release];
-	[super dealloc];
-}
 
 - (UIView *)view
 {
@@ -35,7 +30,6 @@
 		UIImageView *bgView = [[UIImageView alloc] initWithImage:bg];
 		bgView.frame = CGRectMake(0, 0, 316, 71);
 		[_view addSubview:bgView];
-		[bgView release];
 
 		/*
         UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 316, 71)];
@@ -50,7 +44,6 @@
         UITextField *termField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 300, 71)];
         UIButton *lookUpButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 16, 71)];
         [_view addSubview:termField];
-        [termField release];
 	}
 
 	return _view;

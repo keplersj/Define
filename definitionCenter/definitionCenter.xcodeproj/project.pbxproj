@@ -13,12 +13,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E68C6BA216C37F98007DB76D /* BackEnd.h */ = {isa = PBXFileReference; lastKnownFileType = file; name = BackEnd.h; path = ../BackEnd.h; sourceTree = "<group>"; };
-		E68C6BA316C37F98007DB76D /* BackEnd.m */ = {isa = PBXFileReference; lastKnownFileType = file; name = BackEnd.m; path = ../BackEnd.m; sourceTree = "<group>"; };
+		E68C6BA216C37F98007DB76D /* BackEnd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BackEnd.h; path = ../BackEnd.h; sourceTree = "<group>"; };
+		E68C6BA316C37F98007DB76D /* BackEnd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BackEnd.m; path = ../BackEnd.m; sourceTree = "<group>"; };
 		E693297416C0F0B0004AEE75 /* definitionCenter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = definitionCenter; sourceTree = BUILT_PRODUCTS_DIR; };
 		E693297716C0F0B0004AEE75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E693297916C0F0B0004AEE75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		E693297E16C0F0B0004AEE75 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
 		E693297F16C0F0B0004AEE75 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		E693298116C0F0B1004AEE75 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		E693298216C0F0B1004AEE75 /* definitionCenter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "definitionCenter-Prefix.pch"; sourceTree = "<group>"; };
@@ -94,7 +93,6 @@
 		E693297D16C0F0B0004AEE75 /* DEBIAN */ = {
 			isa = PBXGroup;
 			children = (
-				E693297E16C0F0B0004AEE75 /* control.txt */,
 				E693297F16C0F0B0004AEE75 /* control */,
 			);
 			name = DEBIAN;
@@ -285,6 +283,7 @@
 		E693299116C0F0B2004AEE75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = "";
@@ -306,6 +305,7 @@
 		E693299216C0F0B2004AEE75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = "";

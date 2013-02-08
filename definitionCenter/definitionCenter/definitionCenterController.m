@@ -25,6 +25,11 @@
     //Starting up engine
     [BackEnd startUp];
     
+    //Allowing the interface to recieve notifactions from the engine
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayDefinition:) name:@"displayDefinition" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(noTerm:) name:@"noTerm" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(noDef:) name:@"noDef" object:nil];
+    
 	if (_view == nil)
 	{
 		_view = [[UIView alloc] initWithFrame:CGRectMake(2, 0, 316, 71)];

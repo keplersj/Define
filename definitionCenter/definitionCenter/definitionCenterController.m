@@ -63,4 +63,19 @@
 	return 71.0f;
 }
 
+-(void)displayDefinition
+{
+    NSLog(@"You should probably set up the definition view");
+}
+
+-(void)noTerm
+{
+    NSLog(@"There was no term found in the box. You should probably set up the error view.");
+}
+
+-(void)noDef
+{
+    NSLog(@"There was no definition found. You should probably set up the error view.");
+}
+
 @end

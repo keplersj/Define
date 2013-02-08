@@ -13,6 +13,7 @@
 
 +(void)startUp;
 +(void)LookUp:(NSString *)term;
++(void)unLoad;
 //+(void)findDeviceType;
 //+(void)findOSVersion;
 //+(NSString *)deviceType;

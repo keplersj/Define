@@ -37,6 +37,11 @@
     }
 }
 
++(void) unLoad
+{
+    
+}
+
 //Commenting code out as it is currently unnessecary
 /*
 +(void) findDeviceType

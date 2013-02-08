@@ -24,6 +24,7 @@
 {
     //Starting up engine
     [BackEnd startUp];
+    
 	if (_view == nil)
 	{
 		_view = [[UIView alloc] initWithFrame:CGRectMake(2, 0, 316, 71)];
@@ -46,6 +47,7 @@
         UITextField *termField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 300, 71)];
         UIButton *lookUpButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 16, 71)];
         [_view addSubview:termField];
+        [_view addSubview:lookUpButton];
 	}
 
 	return _view;

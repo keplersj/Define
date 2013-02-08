@@ -13,10 +13,10 @@
 
 +(void)startUp;
 +(void)LookUp:(NSString *)term;
-+(void)findDeviceType;
-+(void)findOSVersion;
-+(NSString *)deviceType;
-+(NSString *)iOSVersion;
+//+(void)findDeviceType;
+//+(void)findOSVersion;
+//+(NSString *)deviceType;
+//+(NSString *)iOSVersion;
 
 
 @end

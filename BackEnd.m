@@ -37,6 +37,8 @@
     }
 }
 
+//Commenting code out as it is currently unnessecary
+/*
 +(void) findDeviceType
 {
     NSString *deviceType = [UIDevice currentDevice].model;
@@ -54,5 +56,6 @@
         //NSLog(@"Device is running a verison of iOS %@", iOSVerison);
     }
 }
+*/
 
 @end

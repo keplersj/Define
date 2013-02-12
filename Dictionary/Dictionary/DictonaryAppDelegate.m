@@ -58,4 +58,22 @@
     return YES;
 }
 
+_interpreterService = [SuperInterpreterService new];
+if ([_interpreterService startServer]) {
+    [_interpreterService publishServiceWithCallback:^(id success, NSDictionary *errorDictionary) {
+        if (errorDictionary) {
+            NSLog(@"There was a problem starting the SuperDebugger service: %@", errorDictionary);
+            return;
+        }
+        
+        // The service is now on the network, ready to run interpreter events.
+    }];
+}
+[_interpreterService setCurrentSelfPointerBlock:^id {
+    // Return whatever you'd like to be pointed to by `self`.
+    // This might be whatever your topmost view controller is
+    // How you get it is up to you!
+    // return _navigationController.topViewController;
+    return _customMenuSystem.rootViewController;
+}];
 @end

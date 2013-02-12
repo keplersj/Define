@@ -1,6 +1,8 @@
 Define
 ======
 
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/k2b6s9j/Define/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 The world's fastest most lightweight dictionary application for iOS.
 
 definingSiri and definitionCenter require iOSOpenDev for Xcode: http://iosopendev.com
@@ -42,7 +44,3 @@ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
 ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/k2b6s9j/Define/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-

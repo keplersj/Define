@@ -1,0 +1,3 @@
+[submodule "superdb"]
+	path = superdb
+	url = https://github.com/Shopify/superdb.git

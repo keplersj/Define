@@ -8,6 +8,9 @@
       location = "group:BackEnd.m">
    </FileRef>
    <FileRef
+      location = "group:superdb/SuperDBCore/SuperDBCore.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:definitionCenter/definitionCenter.xcodeproj">
    </FileRef>
    <FileRef

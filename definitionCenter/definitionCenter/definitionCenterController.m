@@ -23,12 +23,20 @@
 
 - (UIView *)view
 {
+    //Tell the console that I am alive!
+    NSLog(@"definitionCenter by Kepler Sticka-Jones is up and running!");
+    
     //Starting up engine
+    NSLog(@"definitionCenter has just told it's engine to turn on.");
     [BackEnd startUp];
     
     //Allowing the interface to recieve notifactions from the engine
+    NSLog(@"definitionCenter is now registering messages to look for sent from it's engine.");
+    NSLog(@"Telling definitionCenter to look for messages about displaying definitions");
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayDefinition:) name:@"displayDefinition" object:nil];
+    NSLog(@"Telling definitionCenter to look for messages about no term in the term field.");
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(noTerm:) name:@"noTerm" object:nil];
+    NSLog(@"Telling definitionCenter to look for messages about no definition found.");
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(noDef:) name:@"noDef" object:nil];
     
 	if (_view == nil)
@@ -56,6 +64,11 @@
         UIButton *lookUpButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 16, 71)];
         [_view addSubview:termField];
         [_view addSubview:lookUpButton];
+        
+        UIView *refernceView = [[UIView alloc] initWithFrame:CGRectMake(2, 0, 316, 71)];
+        UIReferenceLibraryViewController *reference = [[UIReferenceLibraryViewController alloc] initWithTerm:@"Kepler"];
+        [refernceView addSubview:reference];
+        [_view addSubview:refernceView];
 	}
 
 	return _view;

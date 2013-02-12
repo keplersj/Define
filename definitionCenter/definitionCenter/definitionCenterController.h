@@ -17,6 +17,7 @@
 }
 
 - (UIView *)view;
-@property (weak, nonatomic) UITextField *termField;
+
+@property (weak, nonatomic) IBOutlet UITextField *termField;
 
 @end

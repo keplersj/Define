@@ -46,6 +46,23 @@
 		E6B9B58F164A37C200FD43BC /* Icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B9B585164A37C200FD43BC /* Icon-1024.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E62A053316CA223900D7D5C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E62A052E16CA223900D7D5C2 /* SuperDBCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDF1AAA215A8D7760038EAB7;
+			remoteInfo = SuperDBCore;
+		};
+		E62A053516CA223900D7D5C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E62A052E16CA223900D7D5C2 /* SuperDBCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDF1AAC315A8D9C30038EAB7;
+			remoteInfo = SuperDBCoreMac;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		E6038CF01646489700E6D1C1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		E6038CF21646489D00E6D1C1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
@@ -54,6 +71,7 @@
 		E621F56A1696DE0B00899331 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		E621F56C1696DE0F00899331 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "../Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		E621F56E1696DE1200899331 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "../Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		E62A052E16CA223900D7D5C2 /* SuperDBCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SuperDBCore.xcodeproj; path = ../superdb/SuperDBCore/SuperDBCore.xcodeproj; sourceTree = "<group>"; };
 		E62BE46A16BE45DA00583F21 /* BackEnd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BackEnd.m; path = ../BackEnd.m; sourceTree = "<group>"; };
 		E62BE46C16BE460700583F21 /* BackEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackEnd.h; path = ../BackEnd.h; sourceTree = "<group>"; };
 		E62BE46E16BE5D7500583F21 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -125,9 +143,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E62A052F16CA223900D7D5C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E62A053416CA223900D7D5C2 /* libSuperDBCore.a */,
+				E62A053616CA223900D7D5C2 /* libSuperDBCoreMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E63227E415D2B9730081C230 = {
 			isa = PBXGroup;
 			children = (
+				E62A052E16CA223900D7D5C2 /* SuperDBCore.xcodeproj */,
 				E62BE46C16BE460700583F21 /* BackEnd.h */,
 				E62BE46A16BE45DA00583F21 /* BackEnd.m */,
 				E63227F915D2B9740081C230 /* Dictionary */,
@@ -327,6 +355,12 @@
 			mainGroup = E63227E415D2B9730081C230;
 			productRefGroup = E63227F015D2B9740081C230 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E62A052F16CA223900D7D5C2 /* Products */;
+					ProjectRef = E62A052E16CA223900D7D5C2 /* SuperDBCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E63227EE15D2B9740081C230 /* Dictionary */,
@@ -334,6 +368,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E62A053416CA223900D7D5C2 /* libSuperDBCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSuperDBCore.a;
+			remoteRef = E62A053316CA223900D7D5C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E62A053616CA223900D7D5C2 /* libSuperDBCoreMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSuperDBCoreMac.a;
+			remoteRef = E62A053516CA223900D7D5C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E63227ED15D2B9740081C230 /* Resources */ = {

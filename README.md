@@ -7,6 +7,11 @@ definingSiri and definitionCenter require iOSOpenDev for Xcode: http://iosopende
 
 On the App Store: https://itunes.apple.com/tr/app/define-lightweight-fast-dictionary/id564677354?mt=8
 
+Common Files
+============
+
+All files that need to be accessed by multiple projects are in the root folder of Define. This is intended and not a lack of organization.
+
 License
 =======
 

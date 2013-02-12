@@ -16,6 +16,10 @@
 		E621F56B1696DE0B00899331 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = E621F56A1696DE0B00899331 /* Default-Landscape~ipad.png */; };
 		E621F56D1696DE0F00899331 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = E621F56C1696DE0F00899331 /* Default-Portrait@2x~ipad.png */; };
 		E621F56F1696DE1200899331 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = E621F56E1696DE1200899331 /* Default-Portrait~ipad.png */; };
+		E62A053716CA22F700D7D5C2 /* libSuperDBCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E62A053416CA223900D7D5C2 /* libSuperDBCore.a */; };
+		E62A053916CA230500D7D5C2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62A053816CA230500D7D5C2 /* CFNetwork.framework */; };
+		E62A053B16CA230B00D7D5C2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62A053A16CA230B00D7D5C2 /* Security.framework */; };
+		E62A053D16CA231600D7D5C2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62A053C16CA231600D7D5C2 /* CoreData.framework */; };
 		E62BE46B16BE45DA00583F21 /* BackEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = E62BE46A16BE45DA00583F21 /* BackEnd.m */; };
 		E62BE46D16BE460A00583F21 /* BackEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = E62BE46A16BE45DA00583F21 /* BackEnd.m */; };
 		E63227F415D2B9740081C230 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63227F315D2B9740081C230 /* UIKit.framework */; };
@@ -72,6 +76,9 @@
 		E621F56C1696DE0F00899331 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "../Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		E621F56E1696DE1200899331 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "../Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		E62A052E16CA223900D7D5C2 /* SuperDBCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SuperDBCore.xcodeproj; path = ../superdb/SuperDBCore/SuperDBCore.xcodeproj; sourceTree = "<group>"; };
+		E62A053816CA230500D7D5C2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E62A053A16CA230B00D7D5C2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E62A053C16CA231600D7D5C2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E62BE46A16BE45DA00583F21 /* BackEnd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BackEnd.m; path = ../BackEnd.m; sourceTree = "<group>"; };
 		E62BE46C16BE460700583F21 /* BackEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackEnd.h; path = ../BackEnd.h; sourceTree = "<group>"; };
 		E62BE46E16BE5D7500583F21 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -124,9 +131,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E63227F815D2B9740081C230 /* CoreGraphics.framework in Frameworks */,
+				E62A053D16CA231600D7D5C2 /* CoreData.framework in Frameworks */,
+				E62A053B16CA230B00D7D5C2 /* Security.framework in Frameworks */,
+				E62A053916CA230500D7D5C2 /* CFNetwork.framework in Frameworks */,
+				E62A053716CA22F700D7D5C2 /* libSuperDBCore.a in Frameworks */,
 				E63227F415D2B9740081C230 /* UIKit.framework in Frameworks */,
 				E63227F615D2B9740081C230 /* Foundation.framework in Frameworks */,
-				E63227F815D2B9740081C230 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +187,9 @@
 		E63227F215D2B9740081C230 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E62A053C16CA231600D7D5C2 /* CoreData.framework */,
+				E62A053A16CA230B00D7D5C2 /* Security.framework */,
+				E62A053816CA230500D7D5C2 /* CFNetwork.framework */,
 				E63227F315D2B9740081C230 /* UIKit.framework */,
 				E63227F515D2B9740081C230 /* Foundation.framework */,
 				E63227F715D2B9740081C230 /* CoreGraphics.framework */,
@@ -577,6 +591,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = /superdb/SuperDBCore;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;

@@ -12,7 +12,7 @@ On the App Store: https://itunes.apple.com/tr/app/define-lightweight-fast-dictio
 Common Files
 ============
 
-All files that need to be accessed by multiple projects are in the root folder of Define. This is intended and not a lack of organization.
+All files that need to be accessed by multiple projects are in the root folder of the Define Project repository. This is intended and not a lack of organization.
 
 License
 =======

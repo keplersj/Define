@@ -13,5 +13,6 @@
 @interface DictonaryAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) SuperInterpreterService *_interpreterService;
 
 @end

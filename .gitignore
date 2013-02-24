@@ -1,5 +1,4 @@
 # Xcode
-.DS_Store
 build/
 *.pbxuser
 !default.pbxuser
@@ -16,7 +15,8 @@ profile
 DerivedData
 .idea/
 
-#Finder
+#Mac OS X
+.DS_Store
 ._*
 
 #iOSOpenDev
@@ -24,3 +24,29 @@ LatestBuild
 */Packages/*
 Package
 !Package/DEBIAN/control
+
+#Android generated
+bin
+gen
+
+#Eclipse
+.project
+.classpath
+.settings
+
+#IntelliJ IDEA
+.idea
+*.iml
+*.ipr
+*.iws
+out
+
+#Maven
+target
+release.properties
+pom.xml.*
+
+#Ant
+build.xml
+local.properties
+proguard.cfg

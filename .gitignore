@@ -33,6 +33,7 @@ gen
 .project
 .classpath
 .settings
+.metadata
 
 #IntelliJ IDEA
 .idea

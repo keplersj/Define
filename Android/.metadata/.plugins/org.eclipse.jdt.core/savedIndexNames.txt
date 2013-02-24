@@ -1,1 +1,0 @@
-INDEX VERSION 1.126+/Volumes/KEPLER/Project Define/Android/.metadata/.plugins/org.eclipse.jdt.core

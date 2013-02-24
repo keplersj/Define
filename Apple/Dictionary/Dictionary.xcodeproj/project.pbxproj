@@ -38,6 +38,7 @@
 		E6911A64164609CE007E4552 /* DictonaryPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F5C163E469700EE5E1B /* DictonaryPadViewController.m */; };
 		E6911A6716460A05007E4552 /* DictonaryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E632280315D2B9740081C230 /* DictonaryAppDelegate.m */; };
 		E6911A6916460A11007E4552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E63227FF15D2B9740081C230 /* main.m */; };
+		E69C8D4416D9F0D300BB9B6F /* DictonaryAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E632280215D2B9740081C230 /* DictonaryAppDelegate.h */; };
 		E6B9B586164A37C200FD43BC /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B9B581164A37C200FD43BC /* Icon-57.png */; };
 		E6B9B587164A37C200FD43BC /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B9B581164A37C200FD43BC /* Icon-57.png */; };
 		E6B9B588164A37C200FD43BC /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B9B582164A37C200FD43BC /* Icon-72.png */; };
@@ -305,6 +306,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		E69C8D3F16D9EEE900BB9B6F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E69C8D4416D9F0D300BB9B6F /* DictonaryAppDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		E63227EE15D2B9740081C230 /* Dictionary */ = {
 			isa = PBXNativeTarget;
@@ -313,6 +325,7 @@
 				E63227EB15D2B9740081C230 /* Sources */,
 				E63227EC15D2B9740081C230 /* Frameworks */,
 				E63227ED15D2B9740081C230 /* Resources */,
+				E69C8D3F16D9EEE900BB9B6F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -591,7 +604,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				"USER_HEADER_SEARCH_PATHS[arch=*]" = /superdb/SuperDBCore;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "../superdb/SuperDBCore/SuperDBCore/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;

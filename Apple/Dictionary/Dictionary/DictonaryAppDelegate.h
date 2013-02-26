@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "BackEnd.h"
-#import <SuperDBCore/SuperDBCore.h>
+//#import <SuperDBCore/SuperDBCore.h>
 
 @interface DictonaryAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) SuperInterpreterService *_interpreterService;
 
 @end

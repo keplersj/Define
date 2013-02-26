@@ -9,13 +9,14 @@
 #import "DictonaryAppDelegate.h"
 
 @implementation DictonaryAppDelegate {
-	SuperInterpreterService *_interpreterService;
+	//SuperInterpreterService *_interpreterService;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     
+    /*
     _interpreterService = [SuperInterpreterService new];
     if ([_interpreterService startServer]) {
         [_interpreterService publishServiceWithCallback:^(id success, NSDictionary *errorDictionary) {
@@ -34,7 +35,8 @@
         // return _navigationController.topViewController;
         return _window.rootViewController;
     }];
-    
+    */
+     
     return YES;
 }
 							

@@ -16,7 +16,6 @@
 		E621F56B1696DE0B00899331 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = E621F56A1696DE0B00899331 /* Default-Landscape~ipad.png */; };
 		E621F56D1696DE0F00899331 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = E621F56C1696DE0F00899331 /* Default-Portrait@2x~ipad.png */; };
 		E621F56F1696DE1200899331 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = E621F56E1696DE1200899331 /* Default-Portrait~ipad.png */; };
-		E62A053716CA22F700D7D5C2 /* libSuperDBCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E62A053416CA223900D7D5C2 /* libSuperDBCore.a */; };
 		E62A053916CA230500D7D5C2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62A053816CA230500D7D5C2 /* CFNetwork.framework */; };
 		E62A053B16CA230B00D7D5C2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62A053A16CA230B00D7D5C2 /* Security.framework */; };
 		E62A053D16CA231600D7D5C2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62A053C16CA231600D7D5C2 /* CoreData.framework */; };
@@ -38,7 +37,6 @@
 		E6911A64164609CE007E4552 /* DictonaryPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F5C163E469700EE5E1B /* DictonaryPadViewController.m */; };
 		E6911A6716460A05007E4552 /* DictonaryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E632280315D2B9740081C230 /* DictonaryAppDelegate.m */; };
 		E6911A6916460A11007E4552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E63227FF15D2B9740081C230 /* main.m */; };
-		E69C8D4416D9F0D300BB9B6F /* DictonaryAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E632280215D2B9740081C230 /* DictonaryAppDelegate.h */; };
 		E6B9B586164A37C200FD43BC /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B9B581164A37C200FD43BC /* Icon-57.png */; };
 		E6B9B587164A37C200FD43BC /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B9B581164A37C200FD43BC /* Icon-57.png */; };
 		E6B9B588164A37C200FD43BC /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B9B582164A37C200FD43BC /* Icon-72.png */; };
@@ -136,7 +134,6 @@
 				E62A053D16CA231600D7D5C2 /* CoreData.framework in Frameworks */,
 				E62A053B16CA230B00D7D5C2 /* Security.framework in Frameworks */,
 				E62A053916CA230500D7D5C2 /* CFNetwork.framework in Frameworks */,
-				E62A053716CA22F700D7D5C2 /* libSuperDBCore.a in Frameworks */,
 				E63227F415D2B9740081C230 /* UIKit.framework in Frameworks */,
 				E63227F615D2B9740081C230 /* Foundation.framework in Frameworks */,
 			);
@@ -306,17 +303,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		E69C8D3F16D9EEE900BB9B6F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E69C8D4416D9F0D300BB9B6F /* DictonaryAppDelegate.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		E63227EE15D2B9740081C230 /* Dictionary */ = {
 			isa = PBXNativeTarget;
@@ -325,7 +311,6 @@
 				E63227EB15D2B9740081C230 /* Sources */,
 				E63227EC15D2B9740081C230 /* Frameworks */,
 				E63227ED15D2B9740081C230 /* Resources */,
-				E69C8D3F16D9EEE900BB9B6F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -612,15 +597,15 @@
 		E632282715D2B9740081C230 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kepler Sticka-Jones";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kepler Sticka-Jones";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dictionary/Dictionary-Prefix.pch";
 				INFOPLIST_FILE = "Dictionary/Dictionary-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = Define;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "CD92E333-BBAE-4397-A919-C0CCD72A8740";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CD92E333-BBAE-4397-A919-C0CCD72A8740";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

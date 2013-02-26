@@ -16,6 +16,7 @@
 {
     // Override point for customization after application launch.
     
+    //SuperDB
     /*
     _interpreterService = [SuperInterpreterService new];
     if ([_interpreterService startServer]) {

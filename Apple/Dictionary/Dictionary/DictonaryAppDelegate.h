@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "BackEnd.h"
 //#import <SuperDBCore/SuperDBCore.h>
+#import "Flurry.h"
+
 
 @interface DictonaryAppDelegate : UIResponder <UIApplicationDelegate>
 

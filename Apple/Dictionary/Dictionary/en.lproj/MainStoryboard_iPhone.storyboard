@@ -21,9 +21,9 @@
                                 <color key="textColor" red="0.34117648010000001" green="0.22352942819999999" blue="0.12549020350000001" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="1ox-zU-RHt">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="1ox-zU-RHt">
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" type="user" id="Sfx-OE-k7y"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" type="user" id="Sfx-OE-k7y"/>
                                     <constraint firstAttribute="height" constant="260" id="YVT-tl-50I"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
@@ -78,8 +78,9 @@
                             <constraint firstAttribute="trailing" secondItem="ct7-6e-QoV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="AaU-7K-yKF"/>
                             <constraint firstItem="MRm-PP-tk9" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="B0R-G1-DzN"/>
                             <constraint firstItem="TXh-5P-ZgN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="MRm-PP-tk9" secondAttribute="bottom" constant="10" type="user" id="BsG-hB-qkm"/>
+                            <constraint firstItem="qTI-on-v2L" firstAttribute="top" secondItem="1ox-zU-RHt" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="CBG-of-dXU"/>
+                            <constraint firstItem="kg0-eb-j6w" firstAttribute="top" secondItem="1ox-zU-RHt" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="G5Y-Lc-q8T"/>
                             <constraint firstItem="1ox-zU-RHt" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="JD0-nT-249"/>
-                            <constraint firstItem="kg0-eb-j6w" firstAttribute="top" secondItem="1ox-zU-RHt" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="MnZ-pk-RXZ"/>
                             <constraint firstItem="qTI-on-v2L" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="OMT-7Z-lly"/>
                             <constraint firstItem="TXh-5P-ZgN" firstAttribute="top" secondItem="3" secondAttribute="top" constant="54" id="Rrg-Vn-o8T"/>
                             <constraint firstItem="ct7-6e-QoV" firstAttribute="bottom" secondItem="MRm-PP-tk9" secondAttribute="bottom" type="default" id="TZP-OT-rfY"/>

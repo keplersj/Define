@@ -37,6 +37,9 @@
         return _window.rootViewController;
     }];
     */
+    
+    //Flurry Analytics
+    [Flurry startSession:@"CWNCT873QSVSBRNNVK4H"];
      
     return YES;
 }

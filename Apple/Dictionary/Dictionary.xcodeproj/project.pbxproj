@@ -47,6 +47,9 @@
 		E6B9B58D164A37C200FD43BC /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B9B584164A37C200FD43BC /* Icon-144.png */; };
 		E6B9B58E164A37C200FD43BC /* Icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B9B585164A37C200FD43BC /* Icon-1024.png */; };
 		E6B9B58F164A37C200FD43BC /* Icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = E6B9B585164A37C200FD43BC /* Icon-1024.png */; };
+		E6DA029916DC821B0091437F /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DA029816DC821B0091437F /* libFlurry.a */; };
+		E6DA029A16DC821B0091437F /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DA029816DC821B0091437F /* libFlurry.a */; };
+		E6DA029D16DC8C9A0091437F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DA029C16DC8C9A0091437F /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +126,9 @@
 		E6B9B584164A37C200FD43BC /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
 		E6B9B585164A37C200FD43BC /* Icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-1024.png"; sourceTree = "<group>"; };
 		E6D7998116268736009AFA2B /* Dictionary-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Dictionary-Info.plist"; sourceTree = "<group>"; };
+		E6DA029816DC821B0091437F /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
+		E6DA029B16DC835B0091437F /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		E6DA029C16DC8C9A0091437F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,12 +136,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6DA029D16DC8C9A0091437F /* SystemConfiguration.framework in Frameworks */,
 				E63227F815D2B9740081C230 /* CoreGraphics.framework in Frameworks */,
 				E62A053D16CA231600D7D5C2 /* CoreData.framework in Frameworks */,
 				E62A053B16CA230B00D7D5C2 /* Security.framework in Frameworks */,
 				E62A053916CA230500D7D5C2 /* CFNetwork.framework in Frameworks */,
 				E63227F415D2B9740081C230 /* UIKit.framework in Frameworks */,
 				E63227F615D2B9740081C230 /* Foundation.framework in Frameworks */,
+				E6DA029916DC821B0091437F /* libFlurry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +154,7 @@
 				E6911A3E16460842007E4552 /* UIKit.framework in Frameworks */,
 				E6911A3F16460842007E4552 /* Foundation.framework in Frameworks */,
 				E6911A4016460842007E4552 /* CoreGraphics.framework in Frameworks */,
+				E6DA029A16DC821B0091437F /* libFlurry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +176,7 @@
 				E62A052E16CA223900D7D5C2 /* SuperDBCore.xcodeproj */,
 				E62BE46C16BE460700583F21 /* BackEnd.h */,
 				E62BE46A16BE45DA00583F21 /* BackEnd.m */,
+				E6DA029416DC82020091437F /* Flurry Analytics */,
 				E63227F915D2B9740081C230 /* Dictionary */,
 				E63227F215D2B9740081C230 /* Frameworks */,
 				E63227F015D2B9740081C230 /* Products */,
@@ -185,6 +195,7 @@
 		E63227F215D2B9740081C230 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E6DA029C16DC8C9A0091437F /* SystemConfiguration.framework */,
 				E62A053C16CA231600D7D5C2 /* CoreData.framework */,
 				E62A053A16CA230B00D7D5C2 /* Security.framework */,
 				E62A053816CA230500D7D5C2 /* CFNetwork.framework */,
@@ -299,6 +310,15 @@
 				E632280815D2B9740081C230 /* MainStoryboard_iPad.storyboard */,
 			);
 			name = Pad;
+			sourceTree = "<group>";
+		};
+		E6DA029416DC82020091437F /* Flurry Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				E6DA029B16DC835B0091437F /* Flurry.h */,
+				E6DA029816DC821B0091437F /* libFlurry.a */,
+			);
+			name = "Flurry Analytics";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -585,6 +605,10 @@
 				GCC_PREFIX_HEADER = "Dictionary/Dictionary-Prefix.pch";
 				INFOPLIST_FILE = "Dictionary/Dictionary-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "Define-DEV";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -603,6 +627,10 @@
 				GCC_PREFIX_HEADER = "Dictionary/Dictionary-Prefix.pch";
 				INFOPLIST_FILE = "Dictionary/Dictionary-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = Define;
 				PROVISIONING_PROFILE = "CD92E333-BBAE-4397-A919-C0CCD72A8740";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CD92E333-BBAE-4397-A919-C0CCD72A8740";
@@ -622,6 +650,10 @@
 				GCC_PREFIX_HEADER = "Dictionary/Dictionary-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Dictionary/DefineiOS5.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "Define-DEV5";
 				PROVISIONING_PROFILE = "";
@@ -642,6 +674,10 @@
 				GCC_PREFIX_HEADER = "Dictionary/Dictionary-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Dictionary/DefineiOS5.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "Define-5";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

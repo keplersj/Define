@@ -42,25 +42,4 @@
     
 }
 
-//Commenting code out as it is currently unnessecary
-/*
-+(void) findDeviceType
-{
-    NSString *deviceType = [UIDevice currentDevice].model;
-    //NSLog(@"Device is a %@", deviceType);
-}
-
-+(void) findOSVersion
-{
-    if (!NSClassFromString(@"NSLayoutRelationEqual")) {
-        NSString *iOSVerison = @"Post iOS 5";
-        //NSLog(@"Device is running a verison of iOS %@", iOSVerison);
-    }
-    else {
-        NSString *iOSVerison = @"Pre iOS 6";
-        //NSLog(@"Device is running a verison of iOS %@", iOSVerison);
-    }
-}
-*/
-
 @end

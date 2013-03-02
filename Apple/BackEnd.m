@@ -19,20 +19,23 @@
 +(void) LookUp:(NSString *)term
 {
     if ([UIReferenceLibraryViewController dictionaryHasDefinitionForTerm:term]==YES) {
-        NSLog(@"Definition Found");
         [[NSNotificationCenter defaultCenter] postNotificationName:@"displayDefinition" object:self userInfo:(NSDictionary *)term];
+        NSLog(@"Definition Found");
+        [Flurry logEvent:@"Search_For" withParameters:term];
     }
     
     else{
         
         if ([term length] < 0) {
-            NSLog(@"You didn't give me a term");
             [[NSNotificationCenter defaultCenter] postNotificationName:@"noTerm" object:self];
+            NSLog(@"You didn't give me a term");
+            [Flurry logEvent:@"No_Term_Supplied"];
         }
         
         if ([term length] > 0) {
-            NSLog(@"Term did not return a definition");
             [[NSNotificationCenter defaultCenter] postNotificationName:@"noDef" object:self];
+            NSLog(@"Term did not return a definition");
+            [Flurry logEvent:@"Definition_Not_Found" withParameters:term];
         }
     }
 }

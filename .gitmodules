@@ -4,3 +4,6 @@
 [submodule "Apple/KBReferneceLibrary"]
 	path = Apple/KBReferneceLibrary
 	url = git://github.com/k2b6s9j/KBReferenceLibrary.git
+[submodule "Java/KeplerBernardsReferenceLibrary"]
+	path = Java/KeplerBernardsReferenceLibrary
+	url = git://github.com/k2b6s9j/KeplerBernardsReferenceLibrary.git

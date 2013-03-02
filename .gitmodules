@@ -1,3 +1,6 @@
 [submodule "Apple/superdb"]
 	path = Apple/superdb
 	url = https://github.com/Shopify/superdb.git
+[submodule "Apple/KBReferneceLibrary"]
+	path = Apple/KBReferneceLibrary
+	url = git://github.com/k2b6s9j/KBReferenceLibrary.git

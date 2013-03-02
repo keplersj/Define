@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Define", "Define\Define.csproj", "{2A6E8F5B-5D67-4CD5-BF73-C78D06CC2D1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A6E8F5B-5D67-4CD5-BF73-C78D06CC2D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A6E8F5B-5D67-4CD5-BF73-C78D06CC2D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A6E8F5B-5D67-4CD5-BF73-C78D06CC2D1B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2A6E8F5B-5D67-4CD5-BF73-C78D06CC2D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A6E8F5B-5D67-4CD5-BF73-C78D06CC2D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A6E8F5B-5D67-4CD5-BF73-C78D06CC2D1B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

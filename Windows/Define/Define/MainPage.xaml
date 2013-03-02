@@ -15,6 +15,7 @@
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
+        <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="480"/>
         <!--ContentPanel - place additional content here-->
     </Grid>
  

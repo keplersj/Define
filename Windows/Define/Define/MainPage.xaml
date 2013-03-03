@@ -15,6 +15,14 @@
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
+        <TextBlock x:Name="Arrow" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,72,0,0" Height="240" Width="480" FontSize="200" FontWeight="Bold" TextAlignment="Center">
+        	<TextBlock.Foreground>
+        		<SolidColorBrush Color="{StaticResource PhoneAccentColor}"/>
+        	</TextBlock.Foreground>
+        	<Span>
+        		<Run Text="⇡"/>
+        	</Span>
+        </TextBlock>
         <TextBox x:Name="TermSearchBox" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="480"/>
         <TextBlock x:Name="InstructionTextBlock" HorizontalAlignment="Center" Margin="0,536,0,0" TextWrapping="Wrap" Text="Type a term to Define in the Box Above" VerticalAlignment="Top" Height="200" Width="480" TextAlignment="Center" FontSize="48">
         	<TextBlock.Foreground>

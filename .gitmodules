@@ -7,3 +7,6 @@
 [submodule "Java/KeplerBernardsReferenceLibrary"]
 	path = Java/KeplerBernardsReferenceLibrary
 	url = git://github.com/Project-Define/KeplerBernardsReferenceLibrary.git
+[submodule "Apple/DefinitionSearch"]
+	path = Apple/DefinitionSearch
+	url = https://github.com/unixpickle/DefinitionSearch.git

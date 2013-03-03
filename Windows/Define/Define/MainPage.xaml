@@ -16,6 +16,7 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <TextBox HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="480"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,536,0,0" TextWrapping="Wrap" Text="Type a term to Define in the Box Above" VerticalAlignment="Top" Height="200" Width="480" TextAlignment="Center" Foreground="#FFE51400" FontSize="48"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,741,0,0" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="480" TextAlignment="Center">
         	<Run Text="Copyright © Kepler Sticka-Jones 2012-2013"/>
         </TextBlock>

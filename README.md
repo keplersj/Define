@@ -46,3 +46,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 Terms of Service
 ================
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Project-Define/Define/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+

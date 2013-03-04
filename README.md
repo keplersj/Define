@@ -1,8 +1,6 @@
 Define
 ======
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/k2b6s9j/Define/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
 The world's fastest most lightweight dictionary application for iOS.
 
 definingSiri and definitionCenter require iOSOpenDev for Xcode: http://iosopendev.com

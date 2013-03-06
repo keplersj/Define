@@ -10,3 +10,6 @@
 [submodule "iOS"]
 	path = iOS
 	url = https://github.com/Project-Define/Define-for-iOS.git
+[submodule "Shell"]
+	path = Shell
+	url = https://github.com/Project-Define/Define-for-Shell.git

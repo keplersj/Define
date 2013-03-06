@@ -1,9 +1,0 @@
-[submodule "Apple/superdb"]
-	path = Apple/superdb
-	url = https://github.com/Shopify/superdb.git
-[submodule "Apple/KBReferneceLibrary"]
-	path = Apple/KBReferneceLibrary
-	url = git://github.com/Project-Define/KBReferenceLibrary.git
-[submodule "Apple/DefinitionSearch"]
-	path = Apple/DefinitionSearch
-	url = https://github.com/unixpickle/DefinitionSearch.git

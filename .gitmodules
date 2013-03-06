@@ -13,3 +13,6 @@
 [submodule "Shell"]
 	path = Shell
 	url = https://github.com/Project-Define/Define-for-Shell.git
+[submodule "webOS"]
+	path = webOS
+	url = https://github.com/Project-Define/Define-for-webOS.git

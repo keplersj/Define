@@ -7,3 +7,6 @@
 [submodule "Android"]
 	path = Android
 	url = https://github.com/Project-Define/Define-for-Android.git
+[submodule "iOS"]
+	path = iOS
+	url = https://github.com/Project-Define/Define-for-iOS.git

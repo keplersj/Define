@@ -16,3 +16,6 @@
 [submodule "webOS"]
 	path = webOS
 	url = https://github.com/Project-Define/Define-for-webOS.git
+[submodule "Windows"]
+	path = Windows
+	url = https://github.com/Project-Define/Define-for-Windows.git

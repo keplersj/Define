@@ -19,3 +19,6 @@
 [submodule "Windows"]
 	path = Windows
 	url = https://github.com/Project-Define/Define-for-Windows.git
+[submodule "Windows Phone"]
+	path = Windows Phone
+	url = https://github.com/Project-Define/Define-for-Windows-Phone.git

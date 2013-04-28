@@ -28,15 +28,12 @@
             </script>
         <gcse:search>
         </gcse:search>
-        <div class="center">
-        	<div class="arrow">
-        		<b>
-        			&uarr;
-        		</b>
-        	</div>
-        	<div class="directions">
-        		Type a word to Define in the box above.
-        	</div>
+        <div class="directions">
+        	<b>
+        		&uarr;
+        		</br>
+        		Type a word to look in the box above.
+        	</b>
         </div>
         <footer>
         	Copyright &#169; 2012-2013 Kepler Sticka-Jones

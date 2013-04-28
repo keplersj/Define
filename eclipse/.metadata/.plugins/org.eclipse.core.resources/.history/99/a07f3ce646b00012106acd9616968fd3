@@ -17,7 +17,7 @@ footer
 	position:fixed;
 	width:100%;
 	text-align: center;
-	top: 30%;
+	top: %;
 }
 .arrow
 {

@@ -28,15 +28,8 @@
             </script>
         <gcse:search>
         </gcse:search>
-        <div class="center">
-        	<div class="arrow">
-        		<b>
-        			&uarr;
-        		</b>
-        	</div>
-        	<div class="directions">
-        		Type a word to Define in the box above.
-        	</div>
+        <div class="arrow">
+        	&uarr;
         </div>
         <footer>
         	Copyright &#169; 2012-2013 Kepler Sticka-Jones

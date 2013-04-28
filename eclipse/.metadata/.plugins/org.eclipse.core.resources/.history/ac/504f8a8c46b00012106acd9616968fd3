@@ -17,9 +17,9 @@ footer
 	position:fixed;
 	width:100%;
 	text-align: center;
-	top: 30%;
+	top: 50%;
 }
 .arrow
 {
-	font-size:1000%;
+	font-size:250%;
 }

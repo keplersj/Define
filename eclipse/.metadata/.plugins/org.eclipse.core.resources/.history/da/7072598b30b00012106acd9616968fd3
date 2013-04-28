@@ -6,9 +6,11 @@ body
 footer
 {
 	position:fixed;
+	left:0px;
 	bottom:0px;
 	height:30px;
 	width:100%;
+	left: 50%;
 	margin-top: -100px;
-	text-align: center;
+	margin-left: -250px;
 }

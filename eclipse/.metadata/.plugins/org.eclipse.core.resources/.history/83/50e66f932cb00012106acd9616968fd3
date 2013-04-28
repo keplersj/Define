@@ -26,10 +26,9 @@
              s.parentNode.insertBefore(gcse, s);
              })();
             </script>
-        <gcse:search>
-        </gcse:search>
+        <gcse:search/>
         <footer>
-        	Copyright &#169; 2012-2013 Kepler Sticka-Jones
+        	Copyright 2012-2013 Kepler Sticka-Jones
         </footer>
 	</body>
 </html>

@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>
-			Define Alpha 2
+			Define v.A1
 		</title>
 		<link rel="stylesheet" type="text/css" href="index.css">
 		<!-- All the information needed to work well on iOS devices. -->
@@ -26,20 +26,6 @@
              s.parentNode.insertBefore(gcse, s);
              })();
             </script>
-        <gcse:search>
-        </gcse:search>
-        <div class="center">
-        	<div class="arrow">
-        		<b>
-        			&uarr;
-        		</b>
-        	</div>
-        	<div class="directions">
-        		Type a word to Define in the box above.
-        	</div>
-        </div>
-        <footer>
-        	Copyright &#169; 2012-2013 Kepler Sticka-Jones
-        </footer>
+        <gcse:search/>
 	</body>
 </html>

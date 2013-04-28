@@ -17,9 +17,5 @@ footer
 	position:fixed;
 	width:100%;
 	text-align: center;
-	top: 30%;
-}
-.arrow
-{
-	font-size:1000%;
+	top: 50%;
 }

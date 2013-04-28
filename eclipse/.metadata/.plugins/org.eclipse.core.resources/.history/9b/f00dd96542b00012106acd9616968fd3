@@ -12,14 +12,7 @@ footer
 	margin-top: -100px;
 	text-align: center;
 }
-.center
-{
-	position:fixed;
-	width:100%;
-	text-align: center;
-	top: 30%;
-}
 .arrow
 {
-	font-size:1000%;
+	text-align: center;
 }

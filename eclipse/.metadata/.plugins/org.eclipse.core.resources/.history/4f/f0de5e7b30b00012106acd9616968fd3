@@ -6,20 +6,13 @@ body
 footer
 {
 	position:fixed;
+	left:0px;
+	right:0px;
 	bottom:0px;
 	height:30px;
 	width:100%;
+	top: 50%;
+	left: 50%;
 	margin-top: -100px;
-	text-align: center;
-}
-.center
-{
-	position:fixed;
-	width:100%;
-	text-align: center;
-	top: 30%;
-}
-.arrow
-{
-	font-size:1000%;
+	margin-left: -250px;
 }

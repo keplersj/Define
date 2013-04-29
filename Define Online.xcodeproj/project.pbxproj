@@ -7,47 +7,15 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		E6354067172CC5A000DFA42A /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
-		E6354069172CC5A000DFA42A /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-114.png"; sourceTree = "<group>"; };
-		E635406A172CC5A000DFA42A /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
-		E635406B172CC5A000DFA42A /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = "<group>"; };
-		E635406C172CC5A000DFA42A /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		E635406D172CC5A000DFA42A /* index.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = index.css; sourceTree = "<group>"; };
-		E635406E172CC5A000DFA42A /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		E635406F172CC5A000DFA42A /* index.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
-		E6354071172CC5A100DFA42A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E61C6313172E3B2100D060B1 /* Source Code */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Source Code"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		E6354060172CC38500DFA42A = {
 			isa = PBXGroup;
 			children = (
-				E6354067172CC5A000DFA42A /* favicon.ico */,
-				E6354068172CC5A000DFA42A /* icons */,
-				E635406D172CC5A000DFA42A /* index.css */,
-				E635406E172CC5A000DFA42A /* index.html */,
-				E635406F172CC5A000DFA42A /* index.js */,
-				E6354070172CC5A000DFA42A /* loading */,
+				E61C6313172E3B2100D060B1 /* Source Code */,
 			);
-			sourceTree = "<group>";
-		};
-		E6354068172CC5A000DFA42A /* icons */ = {
-			isa = PBXGroup;
-			children = (
-				E6354069172CC5A000DFA42A /* Icon-114.png */,
-				E635406A172CC5A000DFA42A /* Icon-144.png */,
-				E635406B172CC5A000DFA42A /* Icon-57.png */,
-				E635406C172CC5A000DFA42A /* Icon-72.png */,
-			);
-			path = icons;
-			sourceTree = "<group>";
-		};
-		E6354070172CC5A000DFA42A /* loading */ = {
-			isa = PBXGroup;
-			children = (
-				E6354071172CC5A100DFA42A /* Default.png */,
-			);
-			path = loading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -58,7 +26,7 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 			};
-			buildConfigurationList = E6354064172CC38500DFA42A /* Build configuration list for PBXProject "Define for HTML5" */;
+			buildConfigurationList = E6354064172CC38500DFA42A /* Build configuration list for PBXProject "Define Online" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -89,7 +57,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E6354064172CC38500DFA42A /* Build configuration list for PBXProject "Define for HTML5" */ = {
+		E6354064172CC38500DFA42A /* Build configuration list for PBXProject "Define Online" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E6354065172CC38500DFA42A /* Debug */,

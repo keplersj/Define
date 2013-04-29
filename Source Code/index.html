@@ -4,7 +4,9 @@
 		<title>
 			Define Alpha 2
 		</title>
-		<link rel="stylesheet" type="text/css" href="index.css">
+        <!-- Accessing Off-File Code -->
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+        <script src="index.js" type="text/javascript" async></script>
 		<!-- All the information needed to work well on iOS devices. -->
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<!-- iOS Web Icons -->
@@ -14,20 +16,10 @@
 		<link rel="apple-touch-icon" sizes="144x144" href="icons/Icon-144.png" />
 	</head>
 	<body>
-        <script>
-            (function() {
-             var cx = '004985886206999086560:ncgdthc5tlu';
-             var gcse = document.createElement('script');
-             gcse.type = 'text/javascript';
-             gcse.async = true;
-             gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-             '//www.google.com/cse/cse.js?cx=' + cx;
-             var s = document.getElementsByTagName('script')[0];
-             s.parentNode.insertBefore(gcse, s);
-             })();
-            </script>
+        <!-- Google Custom Search HTML Reference, the rest is in JavaScript -->
         <gcse:search>
         </gcse:search>
+        <!-- Shows the instructions in the center -->
         <div class="center">
         	<div class="arrow">
         		<b>
@@ -38,6 +30,7 @@
         		Type a word to Define in the box above.
         	</div>
         </div>
+        <!-- Show copyright and other information at the bottom of the page -->
         <footer>
         	Copyright &#169; 2012-2013 Kepler Sticka-Jones
         </footer>

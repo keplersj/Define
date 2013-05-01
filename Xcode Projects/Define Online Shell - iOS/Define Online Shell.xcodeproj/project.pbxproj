@@ -19,6 +19,7 @@
 		E61F45AA1730E2700095EC71 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61F45A81730E2700095EC71 /* MainStoryboard_iPhone.storyboard */; };
 		E61F45AD1730E2700095EC71 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61F45AB1730E2700095EC71 /* MainStoryboard_iPad.storyboard */; };
 		E61F45B01730E2700095EC71 /* DOSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E61F45AF1730E2700095EC71 /* DOSViewController.m */; };
+		E61F45E01730E9C70095EC71 /* Source Code in Resources */ = {isa = PBXBuildFile; fileRef = E61F45DF1730E9C70095EC71 /* Source Code */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		E61F45AC1730E2700095EC71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		E61F45AE1730E2700095EC71 /* DOSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOSViewController.h; sourceTree = "<group>"; };
 		E61F45AF1730E2700095EC71 /* DOSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOSViewController.m; sourceTree = "<group>"; };
+		E61F45DF1730E9C70095EC71 /* Source Code */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Source Code"; path = "../../../Source Code"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		E61F45961730E2700095EC71 /* Define Online Shell */ = {
 			isa = PBXGroup;
 			children = (
+				E61F45DF1730E9C70095EC71 /* Source Code */,
 				E61F459F1730E2700095EC71 /* DOSAppDelegate.h */,
 				E61F45A01730E2700095EC71 /* DOSAppDelegate.m */,
 				E61F45A81730E2700095EC71 /* MainStoryboard_iPhone.storyboard */,
@@ -168,6 +171,7 @@
 				E61F45A71730E2700095EC71 /* Default-568h@2x.png in Resources */,
 				E61F45AA1730E2700095EC71 /* MainStoryboard_iPhone.storyboard in Resources */,
 				E61F45AD1730E2700095EC71 /* MainStoryboard_iPad.storyboard in Resources */,
+				E61F45E01730E9C70095EC71 /* Source Code in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +317,7 @@
 				E61F45B51730E2700095EC71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

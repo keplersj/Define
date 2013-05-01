@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad
 {
+    self.webView = _webView;
+    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Source Code/index" ofType:@"html"]isDirectory:NO]]];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:Define Online.xcodeproj">
+      location = "group:Xcode Projects/Define Online.xcodeproj">
    </FileRef>
 </Workspace>

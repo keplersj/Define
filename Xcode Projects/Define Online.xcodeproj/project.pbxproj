@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		E61C6313172E3B2100D060B1 /* Source Code */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Source Code"; sourceTree = "<group>"; };
+		E61F45831730E1AA0095EC71 /* Source Code */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Source Code"; path = "../Source Code"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		E6354060172CC38500DFA42A = {
 			isa = PBXGroup;
 			children = (
-				E61C6313172E3B2100D060B1 /* Source Code */,
+				E61F45831730E1AA0095EC71 /* Source Code */,
 			);
 			sourceTree = "<group>";
 		};

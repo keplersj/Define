@@ -34,6 +34,7 @@
 				en,
 			);
 			mainGroup = E6354060172CC38500DFA42A;
+			productRefGroup = E6354060172CC38500DFA42A;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

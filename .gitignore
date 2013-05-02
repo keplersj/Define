@@ -16,6 +16,7 @@ build/
 *.perspectivev3
 !default.perspectivev3
 *.xcworkspace
+!Define\ Online.xcworkspace
 !default.xcworkspace
 xcuserdata
 profile

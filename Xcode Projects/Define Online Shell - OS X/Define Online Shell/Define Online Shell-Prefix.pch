@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'Define Online Shell' target in the 'Define Online Shell' project
-//
-
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-#endif

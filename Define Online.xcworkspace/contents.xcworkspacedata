@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Xcode Projects/Define Online Shell - OS X/Define Online Shell.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Xcode Projects/Define Online Shell - iOS/Define Online Shell.xcodeproj">
    </FileRef>
    <FileRef

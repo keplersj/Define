@@ -14,29 +14,25 @@
 {
     [[UIReferenceLibraryViewController alloc] initWithTerm:@"Kepler"];
     //NSLog(@"UIReferenceLibrary Initalized");
-    //[KBReferenceLibrary log];
 }
 
 +(void) LookUp:(NSString *)term
 {
     if ([UIReferenceLibraryViewController dictionaryHasDefinitionForTerm:term]==YES) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"displayDefinition" object:self userInfo:(NSDictionary *)term];
         NSLog(@"Definition Found");
-        [Flurry logEvent:@"Search_For" withParameters:term];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"displayDefinition" object:self userInfo:(NSDictionary *)term];
     }
     
     else{
         
         if ([term length] < 0) {
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"noTerm" object:self];
             NSLog(@"You didn't give me a term");
-            [Flurry logEvent:@"No_Term_Supplied"];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"noTerm" object:self];
         }
         
         if ([term length] > 0) {
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"noDef" object:self];
             NSLog(@"Term did not return a definition");
-            [Flurry logEvent:@"Definition_Not_Found" withParameters:term];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"noDef" object:self];
         }
     }
 }

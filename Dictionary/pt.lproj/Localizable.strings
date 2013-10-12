@@ -1,0 +1,15 @@
+/* 
+  Localizations.strings
+  Dictionary
+
+  Created by Kepler Sticka-Jones on 1/9/13.
+  Copyright (c) 2013 Kepler Sticka-Jones. All rights reserved.
+*/
+
+"PadSearchButton" = "Definir";
+"Guide" = "Digite uma palavra para procurar na caixa acima.";
+"NoTermAlertTitle" = "Nenhum termo foi fornecido";
+"NoTermAlertMessage" = "Você deve digitar um termo no campo para encontrar uma definição.";
+"AlertButton" = "OK";
+"NoDefAlertTitle" = "Não há nenhuma definição.";
+"NoDefAlertMessage" = "O dicionário Apple não ter uma definição para esse termo.";

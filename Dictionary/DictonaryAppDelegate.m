@@ -7,6 +7,7 @@
 //
 
 #import "DictonaryAppDelegate.h"
+#import "Flurry.h"
 
 @implementation DictonaryAppDelegate {
 	//SuperInterpreterService *_interpreterService;

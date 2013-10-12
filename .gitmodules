@@ -1,6 +1,0 @@
-[submodule "KBReferenceLibrary"]
-	path = KBReferenceLibrary
-	url = git://github.com/Project-Define/KBReferenceLibrary.git
-[submodule "Resources"]
-	path = Resources
-	url = git://github.com/Project-Define/Define-Resources.git

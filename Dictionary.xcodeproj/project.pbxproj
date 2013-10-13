@@ -20,8 +20,7 @@
 		E632280A15D2B9740081C230 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E632280815D2B9740081C230 /* MainStoryboard_iPad.storyboard */; };
 		E64E6C2F16E986E100BCDFD1 /* BackEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E6C2E16E986E100BCDFD1 /* BackEnd.m */; };
 		E64E6C3016E986E100BCDFD1 /* BackEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E6C2E16E986E100BCDFD1 /* BackEnd.m */; };
-		E64E6C4316E9935D00BCDFD1 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E64E6C4216E9935D00BCDFD1 /* libFlurry.a */; };
-		E64E6C4416E9935D00BCDFD1 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E64E6C4216E9935D00BCDFD1 /* libFlurry.a */; };
+		E66D436F180A61A300E8EC1D /* libFlurry_4.2.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E66D436E180A61A300E8EC1D /* libFlurry_4.2.4.a */; };
 		E68F726C169E8E2400FED431 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E68F726E169E8E2400FED431 /* Localizable.strings */; };
 		E6911A3E16460842007E4552 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63227F315D2B9740081C230 /* UIKit.framework */; };
 		E6911A3F16460842007E4552 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63227F515D2B9740081C230 /* Foundation.framework */; };
@@ -64,8 +63,8 @@
 		E632281415D2B9740081C230 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		E64E6C2D16E986E100BCDFD1 /* BackEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackEnd.h; sourceTree = "<group>"; };
 		E64E6C2E16E986E100BCDFD1 /* BackEnd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackEnd.m; sourceTree = "<group>"; };
-		E64E6C4116E9935D00BCDFD1 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Flurry.h; path = "Flurry Analytics/Flurry.h"; sourceTree = "<group>"; };
-		E64E6C4216E9935D00BCDFD1 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry.a; path = "Flurry Analytics/libFlurry.a"; sourceTree = "<group>"; };
+		E66D436D180A61A300E8EC1D /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		E66D436E180A61A300E8EC1D /* libFlurry_4.2.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.2.4.a; sourceTree = "<group>"; };
 		E68F726D169E8E2400FED431 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E6911A3C16460842007E4552 /* Define-DEV5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Define-DEV5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6911A6B16460AA5007E4552 /* DefineiOS5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefineiOS5.plist; sourceTree = "<group>"; };
@@ -91,12 +90,12 @@
 			files = (
 				E6DA029D16DC8C9A0091437F /* SystemConfiguration.framework in Frameworks */,
 				E63227F815D2B9740081C230 /* CoreGraphics.framework in Frameworks */,
+				E66D436F180A61A300E8EC1D /* libFlurry_4.2.4.a in Frameworks */,
 				E62A053D16CA231600D7D5C2 /* CoreData.framework in Frameworks */,
 				E62A053B16CA230B00D7D5C2 /* Security.framework in Frameworks */,
 				E62A053916CA230500D7D5C2 /* CFNetwork.framework in Frameworks */,
 				E63227F415D2B9740081C230 /* UIKit.framework in Frameworks */,
 				E63227F615D2B9740081C230 /* Foundation.framework in Frameworks */,
-				E64E6C4316E9935D00BCDFD1 /* libFlurry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +106,6 @@
 				E6911A3E16460842007E4552 /* UIKit.framework in Frameworks */,
 				E6911A3F16460842007E4552 /* Foundation.framework in Frameworks */,
 				E6911A4016460842007E4552 /* CoreGraphics.framework in Frameworks */,
-				E64E6C4416E9935D00BCDFD1 /* libFlurry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +174,8 @@
 		E64E6C4016E9934F00BCDFD1 /* Flurry Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				E64E6C4116E9935D00BCDFD1 /* Flurry.h */,
-				E64E6C4216E9935D00BCDFD1 /* libFlurry.a */,
+				E66D436D180A61A300E8EC1D /* Flurry.h */,
+				E66D436E180A61A300E8EC1D /* libFlurry_4.2.4.a */,
 			);
 			name = "Flurry Analytics";
 			sourceTree = "<group>";
@@ -476,9 +474,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/Flurry Analytics\"",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KBReferenceLibrary-bcjeqpilfvwcxbaefvjgijmnwjad/Build/Products/Debug-iphoneos\"",
+					"$(SRCROOT)",
+					"\\\"$(SRCROOT)/Flurry\\ Analytics\\\"",
+					"\\\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KBReferenceLibrary-bcjeqpilfvwcxbaefvjgijmnwjad/Build/Products/Debug-iphoneos\\\"",
+					/Users/kbsj/Developer/Define,
 				);
 				PRODUCT_NAME = "Define-DEV";
 				PROVISIONING_PROFILE = "";
@@ -502,9 +501,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/Flurry Analytics\"",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KBReferenceLibrary-bcjeqpilfvwcxbaefvjgijmnwjad/Build/Products/Debug-iphoneos\"",
+					"$(SRCROOT)",
+					"\\\"$(SRCROOT)/Flurry\\ Analytics\\\"",
+					"\\\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KBReferenceLibrary-bcjeqpilfvwcxbaefvjgijmnwjad/Build/Products/Debug-iphoneos\\\"",
+					/Users/kbsj/Developer/Define,
 				);
 				PRODUCT_NAME = Define;
 				PROVISIONING_PROFILE = "CD92E333-BBAE-4397-A919-C0CCD72A8740";

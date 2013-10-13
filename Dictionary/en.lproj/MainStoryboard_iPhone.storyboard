@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="130" id="i5c-aV-L9b"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="150"/>
-                                <color key="textColor" red="0.34117648010000001" green="0.22352942819999999" blue="0.12549020350000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="1ox-zU-RHt">
@@ -51,11 +51,11 @@
                                     <constraint firstAttribute="width" constant="235" id="aT1-L5-HH4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
-                                <color key="textColor" red="0.34117648010000001" green="0.22352942819999999" blue="0.12549020350000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.94509803921568625" green="0.93333333333333335" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ct7-6e-QoV" secondAttribute="trailing" constant="20" symbolic="YES" id="AaU-7K-yKF"/>
@@ -74,6 +74,7 @@
                             <outletCollection property="gestureRecognizers" destination="Han-MT-jFJ" appends="YES" id="yS2-vl-G5x"/>
                         </connections>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="DictDirections" destination="1ox-zU-RHt" id="r6U-bt-NeC"/>
                         <outlet property="DictionaryTermFiel" destination="ct7-6e-QoV" id="xMS-Pq-XKB"/>

@@ -183,18 +183,10 @@
 		E68A3450162E6ABE0066D388 /* UIs */ = {
 			isa = PBXGroup;
 			children = (
-				E68A3454162E6AEB0066D388 /* Auto-Layout */,
-			);
-			name = UIs;
-			sourceTree = "<group>";
-		};
-		E68A3454162E6AEB0066D388 /* Auto-Layout */ = {
-			isa = PBXGroup;
-			children = (
 				E6AF4F5F163E46A900EE5E1B /* Portable */,
 				E6AF4F60163E46B400EE5E1B /* Pad */,
 			);
-			name = "Auto-Layout";
+			name = UIs;
 			sourceTree = "<group>";
 		};
 		E6911A6D16460AAB007E4552 /* Info Lists */ = {

@@ -53,7 +53,7 @@
                                     <action selector="togglePopover:" destination="2" eventType="touchDown" id="4GD-tU-pYX"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ct7-6e-QoV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ct7-6e-QoV">
                                 <rect key="frame" x="20" y="13" width="280" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="3HQ-bg-Skm"/>
@@ -62,15 +62,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="search"/>
                             </textField>
-                            <navigationBar alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRm-PP-tk9">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <color key="tintColor" red="0.94509803920000002" green="0.93333333330000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                <items>
-                                    <navigationItem id="75H-Y3-mNO">
-                                        <nil key="title"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="© 2012-2013 Kepler Sticka-Jones" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTI-on-v2L">
                                 <rect key="frame" x="43" y="530" width="235" height="38"/>
                                 <constraints>
@@ -84,22 +75,17 @@
                         <color key="backgroundColor" red="0.94509803921568625" green="0.93333333333333335" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="MRm-PP-tk9" firstAttribute="top" secondItem="3" secondAttribute="top" id="2yg-xe-mDj"/>
                             <constraint firstAttribute="trailing" secondItem="ct7-6e-QoV" secondAttribute="trailing" constant="20" symbolic="YES" id="AaU-7K-yKF"/>
-                            <constraint firstItem="MRm-PP-tk9" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="B0R-G1-DzN"/>
-                            <constraint firstItem="TXh-5P-ZgN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="MRm-PP-tk9" secondAttribute="bottom" constant="10" id="BsG-hB-qkm"/>
                             <constraint firstItem="qTI-on-v2L" firstAttribute="top" secondItem="1ox-zU-RHt" secondAttribute="bottom" constant="8" symbolic="YES" id="CBG-of-dXU"/>
                             <constraint firstItem="kg0-eb-j6w" firstAttribute="top" secondItem="1ox-zU-RHt" secondAttribute="bottom" constant="8" symbolic="YES" id="G5Y-Lc-q8T"/>
                             <constraint firstItem="1ox-zU-RHt" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="JD0-nT-249"/>
                             <constraint firstItem="qTI-on-v2L" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="OMT-7Z-lly"/>
                             <constraint firstItem="TXh-5P-ZgN" firstAttribute="top" secondItem="3" secondAttribute="top" constant="54" id="Rrg-Vn-o8T"/>
-                            <constraint firstItem="ct7-6e-QoV" firstAttribute="bottom" secondItem="MRm-PP-tk9" secondAttribute="bottom" id="TZP-OT-rfY"/>
                             <constraint firstAttribute="bottom" secondItem="kg0-eb-j6w" secondAttribute="bottom" constant="20" symbolic="YES" id="Vpb-GQ-p6W"/>
                             <constraint firstItem="ct7-6e-QoV" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="WGj-ZK-aKC"/>
                             <constraint firstAttribute="trailing" secondItem="kg0-eb-j6w" secondAttribute="trailing" constant="20" symbolic="YES" id="bCK-xK-LHE"/>
                             <constraint firstItem="qTI-on-v2L" firstAttribute="centerX" secondItem="1ox-zU-RHt" secondAttribute="centerX" id="fMe-lO-0bA"/>
                             <constraint firstAttribute="trailing" secondItem="1ox-zU-RHt" secondAttribute="trailing" constant="20" symbolic="YES" id="gRz-G0-KTs"/>
-                            <constraint firstItem="MRm-PP-tk9" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="jyA-DZ-hJ3"/>
                             <constraint firstItem="TXh-5P-ZgN" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="t2p-HJ-mc0"/>
                             <constraint firstItem="1ox-zU-RHt" firstAttribute="top" relation="lessThanOrEqual" secondItem="TXh-5P-ZgN" secondAttribute="bottom" constant="15" id="trs-oG-J8b"/>
                             <constraint firstAttribute="trailing" secondItem="TXh-5P-ZgN" secondAttribute="trailing" constant="20" symbolic="YES" id="uW0-mk-nZW"/>

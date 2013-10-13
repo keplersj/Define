@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Dictonary View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="DictonaryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="⇡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXh-5P-ZgN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="272" id="Q4N-Y3-GYb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="130" type="user" id="i5c-aV-L9b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="150"/>
+                                <color key="textColor" red="0.34117648010000001" green="0.22352942819999999" blue="0.12549020350000001" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="1ox-zU-RHt">
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" type="user" id="Sfx-OE-k7y"/>
+                                    <constraint firstAttribute="height" constant="260" id="YVT-tl-50I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
+                                <color key="textColor" red="0.34117648010000001" green="0.22352942819999999" blue="0.12549020350000001" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kg0-eb-j6w">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" type="user" id="wjs-Q3-Mhw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="togglePopover:" destination="2" eventType="touchDown" id="4GD-tU-pYX"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ct7-6e-QoV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" type="user" id="3HQ-bg-Skm"/>
+                                </constraints>
+                                <color key="textColor" red="0.34117648005485535" green="0.22352942824363708" blue="0.12549020349979401" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            </textField>
+                            <navigationBar alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRm-PP-tk9">
+                                <color key="tintColor" red="0.94509803920000002" green="0.93333333330000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem id="75H-Y3-mNO">
+                                        <nil key="title"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="© 2012-2013 Kepler Sticka-Jones" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTI-on-v2L">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="aT1-L5-HH4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                <color key="textColor" red="0.34117648010000001" green="0.22352942819999999" blue="0.12549020350000001" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.93333333333333335" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="MRm-PP-tk9" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="2yg-xe-mDj"/>
+                            <constraint firstAttribute="trailing" secondItem="ct7-6e-QoV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="AaU-7K-yKF"/>
+                            <constraint firstItem="MRm-PP-tk9" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="B0R-G1-DzN"/>
+                            <constraint firstItem="TXh-5P-ZgN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="MRm-PP-tk9" secondAttribute="bottom" constant="10" type="user" id="BsG-hB-qkm"/>
+                            <constraint firstItem="qTI-on-v2L" firstAttribute="top" secondItem="1ox-zU-RHt" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="CBG-of-dXU"/>
+                            <constraint firstItem="kg0-eb-j6w" firstAttribute="top" secondItem="1ox-zU-RHt" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="G5Y-Lc-q8T"/>
+                            <constraint firstItem="1ox-zU-RHt" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="JD0-nT-249"/>
+                            <constraint firstItem="qTI-on-v2L" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="OMT-7Z-lly"/>
+                            <constraint firstItem="TXh-5P-ZgN" firstAttribute="top" secondItem="3" secondAttribute="top" constant="54" id="Rrg-Vn-o8T"/>
+                            <constraint firstItem="ct7-6e-QoV" firstAttribute="bottom" secondItem="MRm-PP-tk9" secondAttribute="bottom" type="default" id="TZP-OT-rfY"/>
+                            <constraint firstAttribute="bottom" secondItem="kg0-eb-j6w" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Vpb-GQ-p6W"/>
+                            <constraint firstItem="ct7-6e-QoV" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="WGj-ZK-aKC"/>
+                            <constraint firstAttribute="trailing" secondItem="kg0-eb-j6w" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bCK-xK-LHE"/>
+                            <constraint firstItem="qTI-on-v2L" firstAttribute="centerX" secondItem="1ox-zU-RHt" secondAttribute="centerX" type="default" id="fMe-lO-0bA"/>
+                            <constraint firstAttribute="trailing" secondItem="1ox-zU-RHt" secondAttribute="trailing" constant="20" symbolic="YES" type="user" id="gRz-G0-KTs"/>
+                            <constraint firstItem="MRm-PP-tk9" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="jyA-DZ-hJ3"/>
+                            <constraint firstItem="TXh-5P-ZgN" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="t2p-HJ-mc0"/>
+                            <constraint firstItem="1ox-zU-RHt" firstAttribute="top" relation="lessThanOrEqual" secondItem="TXh-5P-ZgN" secondAttribute="bottom" constant="15" type="user" id="trs-oG-J8b"/>
+                            <constraint firstAttribute="trailing" secondItem="TXh-5P-ZgN" secondAttribute="trailing" constant="20" symbolic="YES" type="user" id="uW0-mk-nZW"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Han-MT-jFJ" appends="YES" id="yS2-vl-G5x"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="DictDirections" destination="1ox-zU-RHt" id="r6U-bt-NeC"/>
+                        <outlet property="DictionaryTermFiel" destination="ct7-6e-QoV" id="xMS-Pq-XKB"/>
+                        <outlet property="KeyboardSwipe" destination="Han-MT-jFJ" id="nt3-A8-ogP"/>
+                        <outlet property="arrowText" destination="TXh-5P-ZgN" id="klW-Lx-CNa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="Han-MT-jFJ">
+                    <connections>
+                        <action selector="KeyboardSwipeDown:" destination="2" id="Y5b-wG-ii7"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="196" y="219"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="DictonaryViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DictonaryViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="KeyboardSwipeDown:"/>
+                <relationship kind="action" name="togglePopover:"/>
+                <relationship kind="outlet" name="DictDirections" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="DictionaryTermFiel" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="KeyboardSwipe" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="arrowText" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

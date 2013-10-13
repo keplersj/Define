@@ -1,0 +1,15 @@
+/* 
+  Localizations.strings
+  Dictionary
+
+  Created by Kepler Sticka-Jones on 1/9/13.
+  Copyright (c) 2013 Kepler Sticka-Jones. All rights reserved.
+*/
+
+"PadSearchButton" = "Definer";
+"Guide" = "Skriv et ord for at slå op i feltet ovenfor.";
+"NoTermAlertTitle" = "Ingen begreb blev leveret";
+"NoTermAlertMessage" = "Du skal indtaste et ord i feltet for at finde en definition.";
+"AlertButton" = "OK";
+"NoDefAlertTitle" = "Der er ingen definition.";
+"NoDefAlertMessage" = "Apple ordbog har ikke en definition for dette begreb.";

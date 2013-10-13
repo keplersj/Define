@@ -1,0 +1,15 @@
+/* 
+  Localizations.strings
+  Dictionary
+
+  Created by Kepler Sticka-Jones on 1/9/13.
+  Copyright (c) 2013 Kepler Sticka-Jones. All rights reserved.
+*/
+
+"PadSearchButton" = "Bestämma";
+"Guide" = "Skriv ett ord att slå upp i rutan ovan.";
+"NoTermAlertTitle" = "Ingen termen levereras";
+"NoTermAlertMessage" = "Du måste ange en term i fältet för att hitta en definition.";
+"AlertButton" = "OK";
+"NoDefAlertTitle" = "Det finns ingen definition.";
+"NoDefAlertMessage" = "Apple-ordlistan har inte en definition för den termen.";

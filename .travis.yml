@@ -1,2 +1,7 @@
 language: none
 script: echo Nothing to Build
+branches:
+  except:
+    - resources
+    - online
+    - windows-phone

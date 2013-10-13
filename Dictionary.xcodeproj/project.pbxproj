@@ -19,16 +19,10 @@
 		E632280715D2B9740081C230 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E632280515D2B9740081C230 /* MainStoryboard_iPhone.storyboard */; };
 		E632280A15D2B9740081C230 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E632280815D2B9740081C230 /* MainStoryboard_iPad.storyboard */; };
 		E64E6C2F16E986E100BCDFD1 /* BackEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E6C2E16E986E100BCDFD1 /* BackEnd.m */; };
-		E64E6C3016E986E100BCDFD1 /* BackEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E6C2E16E986E100BCDFD1 /* BackEnd.m */; };
 		E66D4372180A683800E8EC1D /* libFlurry_4.2.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E66D4371180A683800E8EC1D /* libFlurry_4.2.4.a */; };
 		E68F726C169E8E2400FED431 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E68F726E169E8E2400FED431 /* Localizable.strings */; };
-		E6911A3E16460842007E4552 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63227F315D2B9740081C230 /* UIKit.framework */; };
-		E6911A3F16460842007E4552 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63227F515D2B9740081C230 /* Foundation.framework */; };
-		E6911A4016460842007E4552 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63227F715D2B9740081C230 /* CoreGraphics.framework */; };
 		E6911A63164609C8007E4552 /* DictonaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E632280C15D2B9740081C230 /* DictonaryViewController.m */; };
 		E6911A64164609CE007E4552 /* DictonaryPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F5C163E469700EE5E1B /* DictonaryPadViewController.m */; };
-		E6911A6716460A05007E4552 /* DictonaryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E632280315D2B9740081C230 /* DictonaryAppDelegate.m */; };
-		E6911A6916460A11007E4552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E63227FF15D2B9740081C230 /* main.m */; };
 		E6DA029D16DC8C9A0091437F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DA029C16DC8C9A0091437F /* SystemConfiguration.framework */; };
 		E6FAB391180A1A8600885B7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6FAB390180A1A8600885B7E /* Images.xcassets */; };
 /* End PBXBuildFile section */
@@ -66,7 +60,6 @@
 		E66D4370180A683800E8EC1D /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Flurry.h; path = Flurry/Flurry.h; sourceTree = "<group>"; };
 		E66D4371180A683800E8EC1D /* libFlurry_4.2.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_4.2.4.a; path = Flurry/libFlurry_4.2.4.a; sourceTree = "<group>"; };
 		E68F726D169E8E2400FED431 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		E6911A3C16460842007E4552 /* Define-DEV5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Define-DEV5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6911A6B16460AA5007E4552 /* DefineiOS5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefineiOS5.plist; sourceTree = "<group>"; };
 		E6A7C18316BF81260010FB8E /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E6A7C18416BF81260010FB8E /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -99,16 +92,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6911A3916460841007E4552 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E6911A3E16460842007E4552 /* UIKit.framework in Frameworks */,
-				E6911A3F16460842007E4552 /* Foundation.framework in Frameworks */,
-				E6911A4016460842007E4552 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -125,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				E63227EF15D2B9740081C230 /* Define-DEV.app */,
-				E6911A3C16460842007E4552 /* Define-DEV5.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,23 +221,6 @@
 			productReference = E63227EF15D2B9740081C230 /* Define-DEV.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E6911A3B16460841007E4552 /* Define-iOS5 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E6911A5C16460842007E4552 /* Build configuration list for PBXNativeTarget "Define-iOS5" */;
-			buildPhases = (
-				E6911A3816460841007E4552 /* Sources */,
-				E6911A3916460841007E4552 /* Frameworks */,
-				E6911A3A16460841007E4552 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Define-iOS5";
-			productName = "Define-iOS5";
-			productReference = E6911A3C16460842007E4552 /* Define-DEV5.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -288,7 +253,6 @@
 			projectRoot = "";
 			targets = (
 				E63227EE15D2B9740081C230 /* Dictionary */,
-				E6911A3B16460841007E4552 /* Define-iOS5 */,
 			);
 		};
 /* End PBXProject section */
@@ -306,13 +270,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6911A3A16460841007E4552 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -325,16 +282,6 @@
 				E632280015D2B9740081C230 /* main.m in Sources */,
 				E632280415D2B9740081C230 /* DictonaryAppDelegate.m in Sources */,
 				E64E6C2F16E986E100BCDFD1 /* BackEnd.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E6911A3816460841007E4552 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E6911A6916460A11007E4552 /* main.m in Sources */,
-				E6911A6716460A05007E4552 /* DictonaryAppDelegate.m in Sources */,
-				E64E6C3016E986E100BCDFD1 /* BackEnd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,57 +455,6 @@
 			};
 			name = Release;
 		};
-		E6911A5D16460842007E4552 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_EMPTY_BODY = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Dictionary/Dictionary-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Dictionary/DefineiOS5.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/Flurry Analytics\"",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KBReferenceLibrary-bcjeqpilfvwcxbaefvjgijmnwjad/Build/Products/Debug-iphoneos\"",
-				);
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "Define-DEV5";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		E6911A5E16460842007E4552 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_EMPTY_BODY = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Dictionary/Dictionary-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Dictionary/DefineiOS5.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/Flurry Analytics\"",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/KBReferenceLibrary-bcjeqpilfvwcxbaefvjgijmnwjad/Build/Products/Debug-iphoneos\"",
-				);
-				PRODUCT_NAME = "Define-5";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -576,15 +472,6 @@
 			buildConfigurations = (
 				E632282615D2B9740081C230 /* Debug */,
 				E632282715D2B9740081C230 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E6911A5C16460842007E4552 /* Build configuration list for PBXNativeTarget "Define-iOS5" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E6911A5D16460842007E4552 /* Debug */,
-				E6911A5E16460842007E4552 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

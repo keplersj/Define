@@ -42,6 +42,7 @@
                         </connections>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                     <connections>
                         <outlet property="DictDirections" destination="1ox-zU-RHt" id="r6U-bt-NeC"/>
                         <outlet property="DictionaryTermFiel" destination="ct7-6e-QoV" id="xMS-Pq-XKB"/>

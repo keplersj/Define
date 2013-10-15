@@ -35,9 +35,17 @@
                                 <rect key="frame" x="0.0" y="436" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Manage" id="XqA-Gz-c8Z"/>
+                                    <barButtonItem title="Manage" id="XqA-Gz-c8Z">
+                                        <connections>
+                                            <segue destination="eDN-1f-ZUu" kind="modal" id="Bnj-zi-l45"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="BnH-x6-7d0"/>
-                                    <barButtonItem title="About" id="PxS-DE-Dhe"/>
+                                    <barButtonItem title="About" id="PxS-DE-Dhe">
+                                        <connections>
+                                            <segue destination="Wc6-lW-kbk" kind="push" id="7KW-FD-EVF"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <color key="tintColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
@@ -65,6 +73,7 @@
                         <nil key="title"/>
                         <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" id="gTa-bp-BnI">
                             <rect key="frame" x="20" y="7" width="280" height="30"/>
+                            <color key="tintColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="search"/>
@@ -88,6 +97,45 @@
             </objects>
             <point key="canvasLocation" x="577" y="243"/>
         </scene>
+        <!--View Controller - Management-->
+        <scene sceneID="QGJ-mW-ebA">
+            <objects>
+                <viewController title="Management" id="eDN-1f-ZUu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q0A-kE-BKX"/>
+                        <viewControllerLayoutGuide type="bottom" id="9nf-UA-tvQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g7b-iC-Ns5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="STp-sF-CKj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9j-Ln-PSV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1165" y="-92"/>
+        </scene>
+        <!--View Controller - About-->
+        <scene sceneID="mDX-As-aju">
+            <objects>
+                <viewController title="About" id="Wc6-lW-kbk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Ul-ih-IVS"/>
+                        <viewControllerLayoutGuide type="bottom" id="3nd-B5-ddp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="398-8b-MdK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="C9B-zD-rak"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7p0-mc-l7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1165" y="546"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="sTx-cQ-EnJ">
             <objects>
@@ -95,6 +143,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="BLU-HI-JAp">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="2" kind="relationship" relationship="rootViewController" id="SeY-1A-Kmc"/>

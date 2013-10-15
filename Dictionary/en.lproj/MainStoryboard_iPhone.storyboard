@@ -33,7 +33,7 @@
                                     <constraint firstAttribute="height" constant="260" id="YVT-tl-50I"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
-                                <color key="textColor" red="0.34117648010000001" green="0.22352942819999999" blue="0.12549020350000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ct7-6e-QoV">
@@ -41,7 +41,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="3HQ-bg-Skm"/>
                                 </constraints>
-                                <color key="textColor" red="0.34117648005485535" green="0.22352942824363708" blue="0.12549020349979401" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="search"/>
                             </textField>

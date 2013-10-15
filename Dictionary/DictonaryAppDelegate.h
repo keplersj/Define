@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BackEnd.h"
-
+#import "AppleReference.h"
 
 @interface DictonaryAppDelegate : UIResponder <UIApplicationDelegate>
 

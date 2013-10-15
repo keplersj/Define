@@ -28,7 +28,7 @@
 - (void)viewDidLoad
 {
     //Telling the Engine to Start Up
-    [BackEnd startUp];
+    [AppleReference startUp];
     
     //Setting up to recieve messages from Engine
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayDefinition:) name:@"displayDefinition" object:nil];
@@ -58,7 +58,7 @@
 }
 
 - (IBAction)searchButtonTouch:(id)sender {
-    [BackEnd LookUp:self.dictionaryTermField.text];
+    [AppleReference LookUp:self.dictionaryTermField.text];
 }
 
 - (void)displayDefinition: (NSNotification *)notification {
@@ -70,7 +70,7 @@
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)dictionaryTermField
 {
-    [BackEnd LookUp:self.dictionaryTermField.text];
+    [AppleReference LookUp:self.dictionaryTermField.text];
     return YES;
 }
 

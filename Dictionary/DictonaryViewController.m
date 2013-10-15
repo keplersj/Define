@@ -19,7 +19,7 @@
 - (void)viewDidLoad
 {
     //Telling the Engine to Turn On
-    [BackEnd startUp];
+    [AppleReference startUp];
     
     //Allowing the interface to recieve notifactions from the engine
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayDefinition:) name:@"displayDefinition" object:nil];
@@ -74,7 +74,7 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)DictionaryTermFiel
 {
-    [BackEnd LookUp:self.DictionaryTermFiel.text];
+    [AppleReference LookUp:self.DictionaryTermFiel.text];
     return YES;
 }
 

@@ -63,7 +63,7 @@
     
     
     NSString *term = [[url host] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    [BackEnd LookUp:term];
+    [AppleReference LookUp:term];
     return YES;
 }
 

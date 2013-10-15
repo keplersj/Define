@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BackEnd.h"
+#import "AppleReference.h"
 
 @interface DictonaryViewController : UIViewController <UIPopoverControllerDelegate, UITextFieldDelegate>
 

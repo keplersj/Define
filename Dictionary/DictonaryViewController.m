@@ -34,6 +34,9 @@
     
     //We now have control over the keyboard
     [DictionaryTermFiel setDelegate:self];
+    
+    //Make the damn status bar cooperate!
+    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 - (void)viewDidUnload
@@ -97,6 +100,10 @@
                           cancelButtonTitle: NSLocalizedString(@"AlertButton", @"Button of the no def alert")
                           otherButtonTitles:nil];
     [alert show];
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 @end

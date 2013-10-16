@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "DictonaryReferenceSource.h"
 
-@interface AppleReference : NSObject
+@interface AppleReference : DictonaryReferenceSource
 
 +(void)startUp;
 +(void)LookUp:(NSString *)term;
 +(void)unLoad;
-
 
 @end

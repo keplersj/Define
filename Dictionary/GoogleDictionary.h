@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DictonaryReferenceSource.h"
 
-@interface GoogleDictionary : NSObject
+@interface GoogleDictionary : DictonaryReferenceSource
 
 @end

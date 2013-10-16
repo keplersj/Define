@@ -56,8 +56,6 @@
 		E632280615D2B9740081C230 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		E632280915D2B9740081C230 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		E632281415D2B9740081C230 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E66D4370180A683800E8EC1D /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Flurry.h; path = Flurry/Flurry.h; sourceTree = "<group>"; };
-		E66D4371180A683800E8EC1D /* libFlurry_4.2.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_4.2.4.a; path = Flurry/libFlurry_4.2.4.a; sourceTree = "<group>"; };
 		E67AE813180E547A00366659 /* AppleReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppleReference.h; path = "Lookup Services/Apple Reference/AppleReference.h"; sourceTree = "<group>"; };
 		E67AE814180E547A00366659 /* AppleReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppleReference.m; path = "Lookup Services/Apple Reference/AppleReference.m"; sourceTree = "<group>"; };
 		E67AE816180E548800366659 /* GoogleDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoogleDictionary.h; path = "Lookup Services/Google Dictionary/GoogleDictionary.h"; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 		E63227F215D2B9740081C230 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E64E6C4016E9934F00BCDFD1 /* Flurry Analytics */,
 				E6DA029C16DC8C9A0091437F /* SystemConfiguration.framework */,
 				E62A053C16CA231600D7D5C2 /* CoreData.framework */,
 				E62A053A16CA230B00D7D5C2 /* Security.framework */,
@@ -188,15 +185,6 @@
 				E67AE817180E548800366659 /* GoogleDictionary.m */,
 			);
 			name = "Google Dictionary API";
-			sourceTree = "<group>";
-		};
-		E64E6C4016E9934F00BCDFD1 /* Flurry Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				E66D4370180A683800E8EC1D /* Flurry.h */,
-				E66D4371180A683800E8EC1D /* libFlurry_4.2.4.a */,
-			);
-			name = "Flurry Analytics";
 			sourceTree = "<group>";
 		};
 		E68A3450162E6ABE0066D388 /* UIs */ = {

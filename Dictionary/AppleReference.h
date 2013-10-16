@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 Kepler Sticka-Jones. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 #import "DictonaryReferenceSource.h"
 
 @interface AppleReference : DictonaryReferenceSource

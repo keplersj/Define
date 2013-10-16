@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Kepler Sticka-Jones. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "DictonaryReferenceSource.h"
 
 @interface GoogleDictionary : DictonaryReferenceSource

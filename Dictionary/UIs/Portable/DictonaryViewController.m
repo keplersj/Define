@@ -72,24 +72,12 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)DictionaryTermFiel
 {
-    if ([AppleReference LookUp:self.DictionaryTermFiel.text] == true) {
+    if ([self.DictionaryTermFiel.text length] > 0) {
+        [AppleReference LookUp:self.DictionaryTermFiel.text];
         return YES;
     }
     else {
-        if ([AppleReference LookUp:self.DictionaryTermFiel.text] == false) {
-            if ([self.DictionaryTermFiel.text length] < 0) {
-                NSLog(@"The term box did not contain anything.");
-                [DictionaryTermFiel endEditing:YES];
-                UIAlertView *alert = [[UIAlertView alloc]
-                                      initWithTitle: NSLocalizedString(@"NoTermAlertTitle", @"Title of the no term in box alert")
-                                      message: NSLocalizedString(@"NoTermAlertMessage", @"Button of the no term in box alert")
-                                      delegate: nil
-                                      cancelButtonTitle: NSLocalizedString(@"AlertButton", @"Button of the no term in box alert")
-                                      otherButtonTitles:nil];
-                [alert show];
-                return NO;
-            }
-        }
+        return NO;
     }
 }
 

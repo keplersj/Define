@@ -18,9 +18,9 @@
 		E632280415D2B9740081C230 /* DictonaryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E632280315D2B9740081C230 /* DictonaryAppDelegate.m */; };
 		E632280715D2B9740081C230 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E632280515D2B9740081C230 /* MainStoryboard_iPhone.storyboard */; };
 		E632280A15D2B9740081C230 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E632280815D2B9740081C230 /* MainStoryboard_iPad.storyboard */; };
-		E642677D180D0D240052D45E /* GoogleDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E642677C180D0D240052D45E /* GoogleDictionary.m */; };
-		E64E6C2F16E986E100BCDFD1 /* AppleReference.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E6C2E16E986E100BCDFD1 /* AppleReference.m */; };
-		E67AE811180E4C4300366659 /* DictonaryReferenceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E67AE810180E4C4300366659 /* DictonaryReferenceSource.m */; };
+		E67AE815180E547A00366659 /* AppleReference.m in Sources */ = {isa = PBXBuildFile; fileRef = E67AE814180E547A00366659 /* AppleReference.m */; };
+		E67AE818180E548800366659 /* GoogleDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E67AE817180E548800366659 /* GoogleDictionary.m */; };
+		E67AE81B180E549C00366659 /* DictonaryReferenceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E67AE81A180E549C00366659 /* DictonaryReferenceSource.m */; };
 		E68F726C169E8E2400FED431 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E68F726E169E8E2400FED431 /* Localizable.strings */; };
 		E6911A63164609C8007E4552 /* DictonaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E632280C15D2B9740081C230 /* DictonaryViewController.m */; };
 		E6911A64164609CE007E4552 /* DictonaryPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F5C163E469700EE5E1B /* DictonaryPadViewController.m */; };
@@ -58,14 +58,14 @@
 		E632280B15D2B9740081C230 /* DictonaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DictonaryViewController.h; sourceTree = "<group>"; };
 		E632280C15D2B9740081C230 /* DictonaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DictonaryViewController.m; sourceTree = "<group>"; };
 		E632281415D2B9740081C230 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E642677B180D0D240052D45E /* GoogleDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleDictionary.h; sourceTree = "<group>"; };
-		E642677C180D0D240052D45E /* GoogleDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleDictionary.m; sourceTree = "<group>"; };
-		E64E6C2D16E986E100BCDFD1 /* AppleReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleReference.h; sourceTree = "<group>"; };
-		E64E6C2E16E986E100BCDFD1 /* AppleReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleReference.m; sourceTree = "<group>"; };
 		E66D4370180A683800E8EC1D /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Flurry.h; path = Flurry/Flurry.h; sourceTree = "<group>"; };
 		E66D4371180A683800E8EC1D /* libFlurry_4.2.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_4.2.4.a; path = Flurry/libFlurry_4.2.4.a; sourceTree = "<group>"; };
-		E67AE80F180E4C4300366659 /* DictonaryReferenceSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictonaryReferenceSource.h; sourceTree = "<group>"; };
-		E67AE810180E4C4300366659 /* DictonaryReferenceSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictonaryReferenceSource.m; sourceTree = "<group>"; };
+		E67AE813180E547A00366659 /* AppleReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppleReference.h; path = "Lookup Services/Apple Reference/AppleReference.h"; sourceTree = "<group>"; };
+		E67AE814180E547A00366659 /* AppleReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppleReference.m; path = "Lookup Services/Apple Reference/AppleReference.m"; sourceTree = "<group>"; };
+		E67AE816180E548800366659 /* GoogleDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoogleDictionary.h; path = "Lookup Services/Google Dictionary/GoogleDictionary.h"; sourceTree = "<group>"; };
+		E67AE817180E548800366659 /* GoogleDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoogleDictionary.m; path = "Lookup Services/Google Dictionary/GoogleDictionary.m"; sourceTree = "<group>"; };
+		E67AE819180E549C00366659 /* DictonaryReferenceSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DictonaryReferenceSource.h; path = "Lookup Services/DictonaryReferenceSource.h"; sourceTree = "<group>"; };
+		E67AE81A180E549C00366659 /* DictonaryReferenceSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DictonaryReferenceSource.m; path = "Lookup Services/DictonaryReferenceSource.m"; sourceTree = "<group>"; };
 		E68F726D169E8E2400FED431 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E6A7C18316BF81260010FB8E /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E6A7C18416BF81260010FB8E /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -166,8 +166,8 @@
 			children = (
 				E642677A180D0CEF0052D45E /* Google Dictionary API */,
 				E6426773180D0A990052D45E /* Apple Dictionary API */,
-				E67AE80F180E4C4300366659 /* DictonaryReferenceSource.h */,
-				E67AE810180E4C4300366659 /* DictonaryReferenceSource.m */,
+				E67AE819180E549C00366659 /* DictonaryReferenceSource.h */,
+				E67AE81A180E549C00366659 /* DictonaryReferenceSource.m */,
 			);
 			name = "Lookup Services";
 			sourceTree = "<group>";
@@ -175,8 +175,8 @@
 		E6426773180D0A990052D45E /* Apple Dictionary API */ = {
 			isa = PBXGroup;
 			children = (
-				E64E6C2D16E986E100BCDFD1 /* AppleReference.h */,
-				E64E6C2E16E986E100BCDFD1 /* AppleReference.m */,
+				E67AE813180E547A00366659 /* AppleReference.h */,
+				E67AE814180E547A00366659 /* AppleReference.m */,
 			);
 			name = "Apple Dictionary API";
 			sourceTree = "<group>";
@@ -184,8 +184,8 @@
 		E642677A180D0CEF0052D45E /* Google Dictionary API */ = {
 			isa = PBXGroup;
 			children = (
-				E642677B180D0D240052D45E /* GoogleDictionary.h */,
-				E642677C180D0D240052D45E /* GoogleDictionary.m */,
+				E67AE816180E548800366659 /* GoogleDictionary.h */,
+				E67AE817180E548800366659 /* GoogleDictionary.m */,
 			);
 			name = "Google Dictionary API";
 			sourceTree = "<group>";
@@ -348,13 +348,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E642677D180D0D240052D45E /* GoogleDictionary.m in Sources */,
+				E67AE818180E548800366659 /* GoogleDictionary.m in Sources */,
 				E6911A64164609CE007E4552 /* DictonaryPadViewController.m in Sources */,
+				E67AE81B180E549C00366659 /* DictonaryReferenceSource.m in Sources */,
 				E6911A63164609C8007E4552 /* DictonaryViewController.m in Sources */,
 				E632280015D2B9740081C230 /* main.m in Sources */,
-				E67AE811180E4C4300366659 /* DictonaryReferenceSource.m in Sources */,
+				E67AE815180E547A00366659 /* AppleReference.m in Sources */,
 				E632280415D2B9740081C230 /* DictonaryAppDelegate.m in Sources */,
-				E64E6C2F16E986E100BCDFD1 /* AppleReference.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

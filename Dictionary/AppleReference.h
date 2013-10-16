@@ -14,4 +14,5 @@
 
 +(void)startUp;
 +(void)LookUp:(NSString *)term;
+
 @end

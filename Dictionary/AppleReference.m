@@ -13,7 +13,6 @@
 +(void) startUp
 {
     [[UIReferenceLibraryViewController alloc] initWithTerm:@"Kepler"];
-    //NSLog(@"UIReferenceLibrary Initalized");
 }
 
 +(void) LookUp:(NSString *)term
@@ -35,11 +34,6 @@
             [[NSNotificationCenter defaultCenter] postNotificationName:@"noDef" object:self];
         }
     }
-}
-
-+(void) unLoad
-{
-    
 }
 
 @end

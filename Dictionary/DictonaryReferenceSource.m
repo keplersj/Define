@@ -10,4 +10,19 @@
 
 @implementation DictonaryReferenceSource
 
++(void) startUp
+{
+    NSLog(@"Something tried to intiialize something. Someone will figure it out eventually.");
+}
+
++(void) LookUp:(NSString *)term
+{
+    NSLog(@"Something just tried to look up the term %@", term);
+}
+
++(void) unLoad
+{
+    NSLog(@"Whatever hasn't been unloaded and could be better be now!");
+}
+
 @end

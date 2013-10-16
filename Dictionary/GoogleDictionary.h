@@ -10,4 +10,7 @@
 
 @interface GoogleDictionary : DictonaryReferenceSource
 
++(void)startUp;
++(void)LookUp:(NSString *)term;
+
 @end

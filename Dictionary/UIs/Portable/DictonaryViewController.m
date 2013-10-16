@@ -89,18 +89,6 @@
                 [alert show];
                 return NO;
             }
-            if ([self.DictionaryTermFiel.text length] > 0) {
-                NSLog(@"Term did not return a definition");
-                [DictionaryTermFiel endEditing:YES];
-                UIAlertView *alert = [[UIAlertView alloc]
-                                      initWithTitle: NSLocalizedString(@"NoDefAlertTitle", @"Title of the no def alert")
-                                      message: NSLocalizedString(@"NoDefAlertMessage", @"Message of the no def alert")
-                                      delegate: nil
-                                      cancelButtonTitle: NSLocalizedString(@"AlertButton", @"Button of the no def alert")
-                                      otherButtonTitles:nil];
-                [alert show];
-                return NO;
-            }
         }
     }
 }

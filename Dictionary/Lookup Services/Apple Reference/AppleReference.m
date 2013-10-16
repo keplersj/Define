@@ -22,19 +22,7 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:@"displayDefinition" object:self userInfo:(NSDictionary *)term];
         return true;
     }
-    
     else{
-        
-        if ([term length] < 0) {
-            NSLog(@"You didn't give me a term");
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"noTerm" object:self];
-        }
-        
-        if ([term length] > 0) {
-            NSLog(@"Term did not return a definition");
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"noDef" object:self];
-        }
-        
         return false;
     }
     

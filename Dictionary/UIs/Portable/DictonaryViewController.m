@@ -23,8 +23,6 @@
     
     //Allowing the interface to recieve notifactions from the engine
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayDefinition:) name:@"displayDefinition" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(noTerm:) name:@"noTerm" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(noDef:) name:@"noDef" object:nil];
     
     //Setting UI Strings
     self.DictDirections.text = NSLocalizedString(@"Guide", @"iPad Guide Text");
@@ -74,32 +72,37 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)DictionaryTermFiel
 {
-    [AppleReference LookUp:self.DictionaryTermFiel.text];
-    return YES;
-}
-
-- (void)noTerm: (NSNotification *)notification
-{
-    [DictionaryTermFiel endEditing:YES];
-    UIAlertView *alert = [[UIAlertView alloc]
-                          initWithTitle: NSLocalizedString(@"NoTermAlertTitle", @"Title of the no term in box alert")
-                          message: NSLocalizedString(@"NoTermAlertMessage", @"Button of the no term in box alert")
-                          delegate: nil
-                          cancelButtonTitle: NSLocalizedString(@"AlertButton", @"Button of the no term in box alert")
-                          otherButtonTitles:nil];
-    [alert show];
-}
-
-- (void)noDef: (NSNotification *)notification
-{
-    [DictionaryTermFiel endEditing:YES];
-    UIAlertView *alert = [[UIAlertView alloc]
-                          initWithTitle: NSLocalizedString(@"NoDefAlertTitle", @"Title of the no def alert")
-                          message: NSLocalizedString(@"NoDefAlertMessage", @"Message of the no def alert")
-                          delegate: nil
-                          cancelButtonTitle: NSLocalizedString(@"AlertButton", @"Button of the no def alert")
-                          otherButtonTitles:nil];
-    [alert show];
+    if ([AppleReference LookUp:self.DictionaryTermFiel.text] == true) {
+        return YES;
+    }
+    else {
+        if ([AppleReference LookUp:self.DictionaryTermFiel.text] == false) {
+            if ([self.DictionaryTermFiel.text length] < 0) {
+                NSLog(@"The term box did not contain anything.");
+                [DictionaryTermFiel endEditing:YES];
+                UIAlertView *alert = [[UIAlertView alloc]
+                                      initWithTitle: NSLocalizedString(@"NoTermAlertTitle", @"Title of the no term in box alert")
+                                      message: NSLocalizedString(@"NoTermAlertMessage", @"Button of the no term in box alert")
+                                      delegate: nil
+                                      cancelButtonTitle: NSLocalizedString(@"AlertButton", @"Button of the no term in box alert")
+                                      otherButtonTitles:nil];
+                [alert show];
+                return NO;
+            }
+            if ([self.DictionaryTermFiel.text length] > 0) {
+                NSLog(@"Term did not return a definition");
+                [DictionaryTermFiel endEditing:YES];
+                UIAlertView *alert = [[UIAlertView alloc]
+                                      initWithTitle: NSLocalizedString(@"NoDefAlertTitle", @"Title of the no def alert")
+                                      message: NSLocalizedString(@"NoDefAlertMessage", @"Message of the no def alert")
+                                      delegate: nil
+                                      cancelButtonTitle: NSLocalizedString(@"AlertButton", @"Button of the no def alert")
+                                      otherButtonTitles:nil];
+                [alert show];
+                return NO;
+            }
+        }
+    }
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{

@@ -18,7 +18,6 @@
 		E632280415D2B9740081C230 /* DictonaryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E632280315D2B9740081C230 /* DictonaryAppDelegate.m */; };
 		E632280715D2B9740081C230 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E632280515D2B9740081C230 /* MainStoryboard_iPhone.storyboard */; };
 		E632280A15D2B9740081C230 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E632280815D2B9740081C230 /* MainStoryboard_iPad.storyboard */; };
-		E6426776180D0B010052D45E /* DictonaryLookUp.m in Sources */ = {isa = PBXBuildFile; fileRef = E6426775180D0B010052D45E /* DictonaryLookUp.m */; };
 		E642677D180D0D240052D45E /* GoogleDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E642677C180D0D240052D45E /* GoogleDictionary.m */; };
 		E64E6C2F16E986E100BCDFD1 /* AppleReference.m in Sources */ = {isa = PBXBuildFile; fileRef = E64E6C2E16E986E100BCDFD1 /* AppleReference.m */; };
 		E67AE811180E4C4300366659 /* DictonaryReferenceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E67AE810180E4C4300366659 /* DictonaryReferenceSource.m */; };
@@ -59,8 +58,6 @@
 		E632280B15D2B9740081C230 /* DictonaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DictonaryViewController.h; sourceTree = "<group>"; };
 		E632280C15D2B9740081C230 /* DictonaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DictonaryViewController.m; sourceTree = "<group>"; };
 		E632281415D2B9740081C230 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E6426774180D0B010052D45E /* DictonaryLookUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictonaryLookUp.h; sourceTree = "<group>"; };
-		E6426775180D0B010052D45E /* DictonaryLookUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictonaryLookUp.m; sourceTree = "<group>"; };
 		E642677B180D0D240052D45E /* GoogleDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleDictionary.h; sourceTree = "<group>"; };
 		E642677C180D0D240052D45E /* GoogleDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleDictionary.m; sourceTree = "<group>"; };
 		E64E6C2D16E986E100BCDFD1 /* AppleReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleReference.h; sourceTree = "<group>"; };
@@ -169,8 +166,6 @@
 			children = (
 				E642677A180D0CEF0052D45E /* Google Dictionary API */,
 				E6426773180D0A990052D45E /* Apple Dictionary API */,
-				E6426774180D0B010052D45E /* DictonaryLookUp.h */,
-				E6426775180D0B010052D45E /* DictonaryLookUp.m */,
 				E67AE80F180E4C4300366659 /* DictonaryReferenceSource.h */,
 				E67AE810180E4C4300366659 /* DictonaryReferenceSource.m */,
 			);
@@ -360,7 +355,6 @@
 				E67AE811180E4C4300366659 /* DictonaryReferenceSource.m in Sources */,
 				E632280415D2B9740081C230 /* DictonaryAppDelegate.m in Sources */,
 				E64E6C2F16E986E100BCDFD1 /* AppleReference.m in Sources */,
-				E6426776180D0B010052D45E /* DictonaryLookUp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

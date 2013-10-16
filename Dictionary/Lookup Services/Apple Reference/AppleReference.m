@@ -15,11 +15,12 @@
     [[UIReferenceLibraryViewController alloc] initWithTerm:@"Kepler"];
 }
 
-+(void) LookUp:(NSString *)term
++(BOOL) LookUp:(NSString *)term
 {
     if ([UIReferenceLibraryViewController dictionaryHasDefinitionForTerm:term]==YES) {
         NSLog(@"Definition Found");
         [[NSNotificationCenter defaultCenter] postNotificationName:@"displayDefinition" object:self userInfo:(NSDictionary *)term];
+        return true;
     }
     
     else{
@@ -33,7 +34,10 @@
             NSLog(@"Term did not return a definition");
             [[NSNotificationCenter defaultCenter] postNotificationName:@"noDef" object:self];
         }
+        
+        return false;
     }
+    
 }
 
 @end

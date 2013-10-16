@@ -10,8 +10,23 @@
 
 @interface DictonaryReferenceSource : NSObject
 
+#ifdef __LIVE_TESTING
+
+    #if defined(true)
+    #undef true
+    #endif
+
+    #if defined(false)
+    #undef flase
+    #endif
+
+    #define true (BOOL) 1
+    #define false (BOOL) 0
+
+#endif
+
 +(void)startUp;
-+(void)LookUp:(NSString *)term;
++(BOOL)LookUp:(NSString *)term;
 +(void)unLoad;
 
 @end

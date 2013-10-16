@@ -15,9 +15,10 @@
     NSLog(@"Something tried to intiialize something. Someone will figure it out eventually.");
 }
 
-+(void) LookUp:(NSString *)term
++(BOOL) LookUp:(NSString *)term
 {
     NSLog(@"Something just tried to look up the term %@", term);
+    return FALSE;
 }
 
 +(void) unLoad

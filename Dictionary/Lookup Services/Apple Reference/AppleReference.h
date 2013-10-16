@@ -11,6 +11,6 @@
 @interface AppleReference : DictonaryReferenceSource
 
 +(void)startUp;
-+(void)LookUp:(NSString *)term;
++(BOOL)LookUp:(NSString *)term;
 
 @end

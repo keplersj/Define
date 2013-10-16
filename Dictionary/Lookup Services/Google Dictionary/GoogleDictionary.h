@@ -11,6 +11,6 @@
 @interface GoogleDictionary : DictonaryReferenceSource
 
 +(void)startUp;
-+(void)LookUp:(NSString *)term;
++(BOOL)LookUp:(NSString *)term;
 
 @end

@@ -15,9 +15,10 @@
     NSLog(@"Should probably be checking if Google is still giving Dictionary information here...");
 }
 
-+(void) LookUp:(NSString *)term
++(BOOL) LookUp:(NSString *)term
 {
     NSLog(@"Something just tried to use Google for the term: %@", term);
+    return false;
 }
 
 @end

@@ -21,9 +21,9 @@
 		E67AE815180E547A00366659 /* AppleReference.m in Sources */ = {isa = PBXBuildFile; fileRef = E67AE814180E547A00366659 /* AppleReference.m */; };
 		E67AE818180E548800366659 /* GoogleDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E67AE817180E548800366659 /* GoogleDictionary.m */; };
 		E67AE81B180E549C00366659 /* DictonaryReferenceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E67AE81A180E549C00366659 /* DictonaryReferenceSource.m */; };
+		E67AE81E180E552900366659 /* DictonaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67AE81D180E552900366659 /* DictonaryViewController.m */; };
+		E67AE821180E553200366659 /* DictonaryPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67AE820180E553200366659 /* DictonaryPadViewController.m */; };
 		E68F726C169E8E2400FED431 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E68F726E169E8E2400FED431 /* Localizable.strings */; };
-		E6911A63164609C8007E4552 /* DictonaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E632280C15D2B9740081C230 /* DictonaryViewController.m */; };
-		E6911A64164609CE007E4552 /* DictonaryPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AF4F5C163E469700EE5E1B /* DictonaryPadViewController.m */; };
 		E6DA029D16DC8C9A0091437F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DA029C16DC8C9A0091437F /* SystemConfiguration.framework */; };
 		E6FAB391180A1A8600885B7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6FAB390180A1A8600885B7E /* Images.xcassets */; };
 		F2BF744CE1394CB7A287526F /* libPods-Dictionary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE3819EE2E04855968D8CDD /* libPods-Dictionary.a */; };
@@ -55,8 +55,6 @@
 		E632280315D2B9740081C230 /* DictonaryAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DictonaryAppDelegate.m; sourceTree = "<group>"; };
 		E632280615D2B9740081C230 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		E632280915D2B9740081C230 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		E632280B15D2B9740081C230 /* DictonaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DictonaryViewController.h; sourceTree = "<group>"; };
-		E632280C15D2B9740081C230 /* DictonaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DictonaryViewController.m; sourceTree = "<group>"; };
 		E632281415D2B9740081C230 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		E66D4370180A683800E8EC1D /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Flurry.h; path = Flurry/Flurry.h; sourceTree = "<group>"; };
 		E66D4371180A683800E8EC1D /* libFlurry_4.2.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_4.2.4.a; path = Flurry/libFlurry_4.2.4.a; sourceTree = "<group>"; };
@@ -66,6 +64,10 @@
 		E67AE817180E548800366659 /* GoogleDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoogleDictionary.m; path = "Lookup Services/Google Dictionary/GoogleDictionary.m"; sourceTree = "<group>"; };
 		E67AE819180E549C00366659 /* DictonaryReferenceSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DictonaryReferenceSource.h; path = "Lookup Services/DictonaryReferenceSource.h"; sourceTree = "<group>"; };
 		E67AE81A180E549C00366659 /* DictonaryReferenceSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DictonaryReferenceSource.m; path = "Lookup Services/DictonaryReferenceSource.m"; sourceTree = "<group>"; };
+		E67AE81C180E552900366659 /* DictonaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DictonaryViewController.h; path = UIs/Portable/DictonaryViewController.h; sourceTree = "<group>"; };
+		E67AE81D180E552900366659 /* DictonaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DictonaryViewController.m; path = UIs/Portable/DictonaryViewController.m; sourceTree = "<group>"; };
+		E67AE81F180E553200366659 /* DictonaryPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DictonaryPadViewController.h; path = UIs/Tablet/DictonaryPadViewController.h; sourceTree = "<group>"; };
+		E67AE820180E553200366659 /* DictonaryPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DictonaryPadViewController.m; path = UIs/Tablet/DictonaryPadViewController.m; sourceTree = "<group>"; };
 		E68F726D169E8E2400FED431 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E6A7C18316BF81260010FB8E /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E6A7C18416BF81260010FB8E /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -75,8 +77,6 @@
 		E6A7C18816BF836E0010FB8E /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E6A7C18916BF841A0010FB8E /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E6A7C18A16BF841B0010FB8E /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E6AF4F5B163E469700EE5E1B /* DictonaryPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictonaryPadViewController.h; sourceTree = "<group>"; };
-		E6AF4F5C163E469700EE5E1B /* DictonaryPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictonaryPadViewController.m; sourceTree = "<group>"; };
 		E6D7998116268736009AFA2B /* Dictionary-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Dictionary-Info.plist"; sourceTree = "<group>"; };
 		E6DA029C16DC8C9A0091437F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E6FAB390180A1A8600885B7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				E6AF4F5F163E46A900EE5E1B /* Portable */,
-				E6AF4F60163E46B400EE5E1B /* Pad */,
+				E6AF4F60163E46B400EE5E1B /* Tablet */,
 			);
 			name = UIs;
 			sourceTree = "<group>";
@@ -220,21 +220,21 @@
 		E6AF4F5F163E46A900EE5E1B /* Portable */ = {
 			isa = PBXGroup;
 			children = (
-				E632280B15D2B9740081C230 /* DictonaryViewController.h */,
-				E632280C15D2B9740081C230 /* DictonaryViewController.m */,
+				E67AE81C180E552900366659 /* DictonaryViewController.h */,
+				E67AE81D180E552900366659 /* DictonaryViewController.m */,
 				E632280515D2B9740081C230 /* MainStoryboard_iPhone.storyboard */,
 			);
 			name = Portable;
 			sourceTree = "<group>";
 		};
-		E6AF4F60163E46B400EE5E1B /* Pad */ = {
+		E6AF4F60163E46B400EE5E1B /* Tablet */ = {
 			isa = PBXGroup;
 			children = (
-				E6AF4F5B163E469700EE5E1B /* DictonaryPadViewController.h */,
-				E6AF4F5C163E469700EE5E1B /* DictonaryPadViewController.m */,
+				E67AE81F180E553200366659 /* DictonaryPadViewController.h */,
+				E67AE820180E553200366659 /* DictonaryPadViewController.m */,
 				E632280815D2B9740081C230 /* MainStoryboard_iPad.storyboard */,
 			);
-			name = Pad;
+			name = Tablet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,10 +348,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E67AE821180E553200366659 /* DictonaryPadViewController.m in Sources */,
+				E67AE81E180E552900366659 /* DictonaryViewController.m in Sources */,
 				E67AE818180E548800366659 /* GoogleDictionary.m in Sources */,
-				E6911A64164609CE007E4552 /* DictonaryPadViewController.m in Sources */,
 				E67AE81B180E549C00366659 /* DictonaryReferenceSource.m in Sources */,
-				E6911A63164609C8007E4552 /* DictonaryViewController.m in Sources */,
 				E632280015D2B9740081C230 /* main.m in Sources */,
 				E67AE815180E547A00366659 /* AppleReference.m in Sources */,
 				E632280415D2B9740081C230 /* DictonaryAppDelegate.m in Sources */,

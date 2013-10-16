@@ -71,7 +71,7 @@
     {
       "size" : "72x72",
       "idiom" : "ipad",
-      "filename" : "Icon-144-1.png",
+      "filename" : "Icon-144.png",
       "scale" : "2x"
     },
     {
@@ -82,6 +82,12 @@
     {
       "idiom" : "ipad",
       "size" : "76x76",
+      "scale" : "2x"
+    },
+    {
+      "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "Icon-1024.png",
       "scale" : "2x"
     }
   ],

@@ -15,8 +15,6 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *DictionaryTermFiel;
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *KeyboardSwipe;
-@property (weak, nonatomic) NSString *deviceType;
-@property (weak, nonatomic) NSString *iOSVerison;
 - (IBAction)KeyboardSwipeDown:(id)sender;
 - (IBAction)togglePopover:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *DictDirections;

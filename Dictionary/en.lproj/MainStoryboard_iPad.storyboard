@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--Dictonary Pad View Controller-->
+        <!--Dictonary View Controller-->
         <scene sceneID="4">
             <objects>
-                <viewController id="2" customClass="DictonaryPadViewController" sceneMemberID="viewController">
+                <viewController id="2" customClass="DictonaryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rRJ-hD-yeL"/>
                         <viewControllerLayoutGuide type="bottom" id="clE-So-n2G"/>
@@ -33,9 +33,6 @@
                                 <state key="normal" title="searchButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="searchButtonTouch:" destination="2" eventType="touchUpInside" id="NJH-Q0-lF4"/>
-                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="⇡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8i-20-BZS">
                                 <rect key="frame" x="319" y="179" width="130" height="144"/>
@@ -86,10 +83,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="dictionaryCopyright" destination="p3T-d7-SJg" id="DgV-yb-2Uz"/>
-                        <outlet property="dictionaryGuide" destination="aiP-X7-G48" id="lAE-lj-0RH"/>
-                        <outlet property="dictionaryTermField" destination="Dew-Yd-9mg" id="2RI-Co-1BZ"/>
-                        <outlet property="searchButton" destination="mCe-Mg-c8W" id="A9U-qy-3YJ"/>
+                        <outlet property="DictDirections" destination="aiP-X7-G48" id="mqk-Ty-6FL"/>
+                        <outlet property="DictionaryTermFiel" destination="Dew-Yd-9mg" id="LZj-gN-7Y9"/>
+                        <outlet property="arrowText" destination="Z8i-20-BZS" id="U77-rC-ChH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>

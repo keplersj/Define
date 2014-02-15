@@ -13,6 +13,9 @@ repositories {
     mavenCentral()
 }
 
+group = 'k2b6s9j'
+version = '1.0-SNAPSHOT'
+
 android {
     compileSdkVersion 19
     buildToolsVersion "19.0.1"

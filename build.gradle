@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        zclasspath 'com.android.tools.build:gradle:0.7.+'
+        classpath 'com.android.tools.build:gradle:0.7.+'
     }
 }
 

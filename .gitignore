@@ -11,4 +11,14 @@ project/plugins/project/
 
 # Scala-IDE specific
 .scala_dependencies
-.idea
+
+# IntelliJ Idea specific
+out
+*.idea
+*.iml
+*.ipr
+*.iws
+
+local.properties
+gen
+bin

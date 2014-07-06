@@ -18,23 +18,11 @@
 
 - (void)viewDidLoad
 {
-    //Telling the Engine to Turn On
-    [AppleReference startUp];
-    
-    //Allowing the interface to recieve notifactions from the engine
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayDefinition:) name:@"displayDefinition" object:nil];
-    
     //Setting UI Strings
     self.DictDirections.text = NSLocalizedString(@"Guide", @"iPad Guide Text");
     
-    //Intialized Everything needed to function and for interface, showing user
-    [super viewDidLoad];
-    
     //We now have control over the keyboard
-    [DictionaryTermFiel setDelegate:self];
-    
-    //Make the damn status bar cooperate!
-    [self setNeedsStatusBarAppearanceUpdate];
+    [DictionaryTermFiel setDelegate:self];\
 }
 
 - (void)viewDidUnload

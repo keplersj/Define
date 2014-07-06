@@ -18,6 +18,17 @@
 class DefineViewController < UIViewController
 
   def viewDidLoad
+    #Telling the Engine to Turn On
+    AppleReference startUp
+
+    #Allowing the interface to recieve notifactions from the engine
+    App.notification_center.observe(name: 'displayDefinition', object: nil, selector: self.displayDefinition)
+
+    #Intialized Everything needed to function and for interface, showing user
+    super viewDidLoad
+
+    #Make the damn status bar cooperate!
+    self.setNeedsStatusBarAppearanceUpdate
 
   end
 

@@ -42,7 +42,7 @@ class DefineViewController < UIViewController
   end
 
   def preferredStatusBarStyle
-    
+    UIStatusBarStyleLightContent
   end
 
 end

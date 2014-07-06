@@ -16,4 +16,11 @@ Motion::Project::App.setup do |app|
     pod 'FlurrySDK'
   end
 
+  app.development do
+    app.phrase do
+      app.phrase.enabled = true
+      app.phrase.auth_token = 'eeddef8fbe65f23300c674fc23a1d4ee'
+    end
+  end
+
 end

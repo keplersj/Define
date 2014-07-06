@@ -3,7 +3,9 @@
 ##  Original Objective-C Implementation: DictonaryViewController.m
 ##  Original Xcode Project Name: Dictionary
 ##
-##  define_view_controller.rb
+##  Initally Ported to Ruby As: define_view_controller.rb
+##
+##  define_screen.rb
 ##  Define
 ##
 ##  Currently running under RubyMotion. http://www.rubymotion.com/
@@ -15,29 +17,23 @@
 ##  This code is licensed on MIT. https://raw.githubusercontent.com/k2b6s9j/Define/master/LICENSE
 ##
 
-class DefineViewController < UIViewController
+class DefineViewController < PM::Screen
 
-  def viewDidLoad
+  title 'Define'
+
+  def on_load
+    set_attributes self.view, {
+        background_color: hex_color("#000000")
+    }
+
     #Telling the Engine to Turn On
     AppleReference startUp
 
     #Allowing the interface to recieve notifactions from the engine
     App.notification_center.observe(name: 'displayDefinition', object: nil, selector: self.displayDefinition)
 
-    #Intialized Everything needed to function and for interface, showing user
-    super viewDidLoad
-
     #Make the damn status bar cooperate!
     self.setNeedsStatusBarAppearanceUpdate
-
-  end
-
-  def viewDidUnload
-
-  end
-
-  def shouldAutorotateToInterfaceOrientation(UIInterfaceOrientation: interfaceOrientation)
-
   end
 
   def displayDefinition(NSNotification: notification)

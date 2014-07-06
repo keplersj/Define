@@ -15,15 +15,13 @@
 ##  This code is licensed on MIT. https://raw.githubusercontent.com/k2b6s9j/Define/master/LICENSE
 ##
 
-class AppDelegate
+class AppDelegate < PM::Delegate
 
-  def application(application, didFinishLaunchingWithOptions:launchOptions)
+  def on_load(app, options)
 
     NSLog 'Define has started.'
     startFlurry
     createWindow
-
-    true
 
   end
 

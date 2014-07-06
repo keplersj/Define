@@ -18,6 +18,31 @@
 class DefineViewController < UIViewController
 
   def viewDidLoad
+
+  end
+
+  def viewDidUnload
+
+  end
+
+  def shouldAutorotateToInterfaceOrientation(UIInterfaceOrientation: interfaceOrientation)
+
+  end
+
+  def displayDefinition(NSNotification: notification)
+
+  end
+
+  def KeyboardSwiptDown(id: sender)
+
+  end
+
+  def textFieldShouldReturn(UITextField: textField)
+
+  end
+
+  def preferredStatusBarStyle
+    
   end
 
 end

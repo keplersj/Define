@@ -19,16 +19,16 @@ class AppDelegate < PM::Delegate
 
   def on_load(app, options)
 
-    NSLog 'Define has started.'
+    PM.logger.info 'Define has started.'
     startFlurry
-    createWindow
+    open DefineScreen.new(nav_bar: false)
 
   end
 
   def application(application, openURL:url, sourceApplication:sourceApp, annotation:annotation)
-    NSLog "Calling Application Bundle ID: #{sourceApplication}"
-    NSLog "URL scheme: #{url scheme}"
-    NSLog "URL query: #{url query}"
+    PM.logger.info "Calling Application Bundle ID: #{sourceApplication}"
+    PM.logger.info "URL scheme: #{url scheme}"
+    PM.logger.info "URL query: #{url query}"
 
     true
   end
@@ -36,15 +36,6 @@ class AppDelegate < PM::Delegate
   def startFlurry
 
     Flurry.startSession('CWNCT873QSVSBRNNVK4H')
-
-  end
-
-  def createWindow
-
-    @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
-    @window.rootViewController = DefineViewController.alloc.init
-    @window.rootViewController.wantsFullScreenLayout = true
-    @window.makeKeyAndVisible
 
   end
 

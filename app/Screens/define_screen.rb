@@ -17,39 +17,23 @@
 ##  This code is licensed on MIT. https://raw.githubusercontent.com/k2b6s9j/Define/master/LICENSE
 ##
 
-class DefineViewController < PM::Screen
+class DefineScreen < PM::Screen
 
   title 'Define'
 
-  def on_load
-    set_attributes self.view, {
-        background_color: hex_color("#000000")
-    }
-
+  def will_load
     #Telling the Engine to Turn On
     AppleReference startUp
 
     #Allowing the interface to recieve notifactions from the engine
-    App.notification_center.observe(name: 'displayDefinition', object: nil, selector: self.displayDefinition)
-
-    #Make the damn status bar cooperate!
-    self.setNeedsStatusBarAppearanceUpdate
+    App.notification_center.observe(name: 'displayDefinition', object: nil, selector: :displayDefinition)
   end
 
-  def displayDefinition(NSNotification: notification)
-
-  end
-
-  def KeyboardSwiptDown(id: sender)
-
-  end
-
-  def textFieldShouldReturn(UITextField: textField)
-
-  end
-
-  def preferredStatusBarStyle
-    UIStatusBarStyleLightContent
+  def on_load
+    set_attributes self.view, {
+        background_color: '#AAAAAA'.to_color
+    }
+    @term_text_view = add UITextView.alloc.initWithFrame([[100, 100], [300, 45]], [10.0,10.0])
   end
 
 end

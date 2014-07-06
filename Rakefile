@@ -24,3 +24,7 @@ Motion::Project::App.setup do |app|
   end
 
 end
+
+task :build => 'phrase:pull'
+task 'build:device' => 'phrase:pull'
+task 'build:simulator' => 'phrase:pull'

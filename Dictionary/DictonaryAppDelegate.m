@@ -18,9 +18,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
-    //Flurry Analytics
-    [Flurry startSession:@"CWNCT873QSVSBRNNVK4H"];
      
     return YES;
 }

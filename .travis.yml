@@ -5,5 +5,5 @@ before_install:
     - mkdir -p ~/Library/RubyMotion/build
     - sudo motion update
 install: 
-    - bundle install
+    - gem install motion-cocoapods
     - rake pod:install

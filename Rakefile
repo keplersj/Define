@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+$:.unshift("/Library/RubyMotion/lib")
+require 'motion/project/template/ios'
+
+begin
+  require 'bundler'
+  Bundler.require
+rescue LoadError
+end
+
+Motion::Project::App.setup do |app|
+  # Use `rake config' to see complete project settings.
+  app.name = 'Define'
+  app.deployment_target = '7.0'
+  app.device_family = [:iphone, :ipad]
+  app.interface_orientations = [:portrait, :portrait_upside_down]
+  app.identifier = 'com.k2b6s9j.Define'
+  app.short_version = '2.0'
+  app.icons = Dir.glob("resources/Icon*.png").map{|icon| icon.split("/").last}
+  app.prerendered_icon = true
+  app.info_plist['APP_STORE_ID'] = 564677354
+  app.info_plist['CFBundleURLTypes'] = [
+      { 'CFBundleURLName' => 'com.k2b6s9j.Define',
+        'CFBundleURLSchemes' => ['define'] }
+  ]
+
+  app.pods do
+    pod 'FlurrySDK'
+  end
+
+  app.development do
+    app.phrase do
+      app.phrase.enabled = true
+      app.phrase.auth_token = 'eeddef8fbe65f23300c674fc23a1d4ee'
+    end
+  end
+
+end
+
+task :build => 'phrase:pull'
+task 'build:device' => 'phrase:pull'
+task 'build:simulator' => 'phrase:pull'

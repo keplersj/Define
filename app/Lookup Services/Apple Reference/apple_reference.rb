@@ -18,16 +18,16 @@
 ##  This code is licensed on MIT. https://raw.githubusercontent.com/k2b6s9j/Define/master/LICENSE
 ##
 
+## Contains methods nessacery for native functionality on Apple devices.
 class AppleReference < DefineReferenceSource
 
-  def startUp
-
+  ## Calls the Apple Reference Library to memory with a dumby term.
+  def start_up
     UIReferenceLibraryViewController.alloc.initWithTerm('Kepler')
-
   end
 
-  def lookUp(term='')
-
+  ## Calls the Apple Reference Library to find a definition for a term and send a notification when found.
+  def look_up(term='')
     case term
       when UIReferenceLibraryViewController.dictionaryHasDefinitionForTerm(term)
         App.notification_center.post('displayDefinition', object: self, info: term)
@@ -35,7 +35,8 @@ class AppleReference < DefineReferenceSource
       else
         false
     end
-
   end
+
+  ## The un_load method is not called simply due to the fact that RubyMotion handles all memory functions.
 
 end

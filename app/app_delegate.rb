@@ -25,10 +25,14 @@ class AppDelegate < PM::Delegate
 
   end
 
-  def application(application, openURL:url, sourceApplication:sourceApp, annotation:annotation)
-    PM.logger.info "Calling Application Bundle ID: #{sourceApplication}"
-    PM.logger.info "URL scheme: #{url scheme}"
-    PM.logger.info "URL query: #{url query}"
+  def on_open_url(args = {})
+    args[:url]        # => the URL used to fire the app (NSURL)
+    args[:source_app] # => the bundle ID of the app that is launching your app (string)
+    args[:annotation] # => hash with annotation data from the source app
+
+    PM.logger.info "Calling Application Bundle ID: #{:source_app}"
+    PM.logger.info "URL scheme: #{:url.scheme}"
+    PM.logger.info "URL query: #{:url.query}"
 
     true
   end

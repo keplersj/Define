@@ -23,7 +23,7 @@ class DefineScreen < PM::Screen
 
   def will_load
     #Telling the Engine to Turn On
-    AppleReference startUp
+    AppleReference start_up
 
     #Allowing the interface to recieve notifactions from the engine
     App.notification_center.observe(name: 'displayDefinition', object: nil, selector: :displayDefinition)

@@ -42,15 +42,4 @@
     [DictionaryTermFiel endEditing:YES];
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)DictionaryTermFiel
-{
-    if ([self.DictionaryTermFiel.text length] > 0) {
-        [AppleReference LookUp:self.DictionaryTermFiel.text];
-        return YES;
-    }
-    else {
-        return NO;
-    }
-}
-
 @end

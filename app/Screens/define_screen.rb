@@ -19,17 +19,17 @@
 
 class DefineScreen < PM::Screen
 
-  title @define_term_field = UITextField.alloc.initWithFrame([[20, 7], [280, 30]])
-        @define_term_field.opaque = false
-        @define_term_field.clipsSubviews = true
-        @define_term_field.borderStyle = UITextBorderStyleRoundedRect
-        @define_term_field.clearsOnBeginEditing = true
-        @define_term_field.minimumFontSize = "17"
-        @define_term_field.clearButtonMode = UITextFieldViewModeAlways
-        @define_term_field.keyboardAppearance = UIKeyboardAppearanceDark
-        @define_term_field.returnKeyType = UIReturnKeySearch
-        @define_term_field.backgroundColor = 'black'.to_color
-        @define_term_field.textColor = 'white'.to_color
+  title $define_term_field = UITextField.alloc.initWithFrame([[20, 7], [280, 30]])
+        $define_term_field.opaque = false
+        $define_term_field.clipsSubviews = true
+        $define_term_field.borderStyle = UITextBorderStyleRoundedRect
+        $define_term_field.clearsOnBeginEditing = true
+        $define_term_field.minimumFontSize = "17"
+        $define_term_field.clearButtonMode = UITextFieldViewModeAlways
+        $define_term_field.keyboardAppearance = UIKeyboardAppearanceDark
+        $define_term_field.returnKeyType = UIReturnKeySearch
+        $define_term_field.backgroundColor = 'black'.to_color
+        $define_term_field.textColor = 'white'.to_color
 
   def will_load
     #Telling the Engine to Turn On
@@ -45,20 +45,26 @@ class DefineScreen < PM::Screen
     }
   end
 
-  def did_load
-    # We now have control over the keyboard.
-    @define_term_field.setDelegate self
-  end
-
   def will_appear
     #Allowing the interface to recieve notifactions from the engine
     @definition_display_notification = App.notification_center.observe 'displayDefinition' do |notification|
       disply_apple_reference notification.userInfo
     end
+
+    $define_term_field.delegate = self
   end
 
   def will_disappear
     App.notification_center.unobserver @definition_display_notification
+  end
+
+  def textFieldShouldReturn(field)
+    if (field.text.length > 0)
+      AppleReference.look_up(field.text)
+      true
+    else
+      false
+    end
   end
 
   def display_apple_reference(term)

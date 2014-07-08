@@ -13,22 +13,16 @@
 @end
 
 @implementation DictonaryViewController;
-@synthesize KeyboardSwipe;
-@synthesize DictionaryTermFiel;
+@synthesize KeyboardSwipe
 
 - (void)viewDidLoad
 {
     //Setting UI Strings
     self.DictDirections.text = NSLocalizedString(@"Guide", @"iPad Guide Text");
-    
-    //We now have control over the keyboard
-    [DictionaryTermFiel setDelegate:self];
 }
 
 - (void)viewDidUnload
 {
-    
-    [self setDictionaryTermFiel:nil];
     [self setKeyboardSwipe:nil];
     // Release any retained subviews of the main view.
 }

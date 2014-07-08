@@ -45,6 +45,11 @@ class DefineScreen < PM::Screen
     }
   end
 
+  def did_load
+    # We now have control over the keyboard.
+    @define_term_field.setDelegate self
+  end
+
   def will_appear
     #Allowing the interface to recieve notifactions from the engine
     @definition_display_notification = App.notification_center.observe 'displayDefinition' do |notification|

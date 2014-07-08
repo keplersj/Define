@@ -30,7 +30,7 @@ class DefineScreen < PM::Screen
     set_attributes self.view, {
         background_color: '#AAAAAA'.to_color
     }
-    @term_text_view = add UITextView.alloc.initWithFrame([[100, 100], [300, 45]], [10.0,10.0])
+    @term_text_view = add UITextView.alloc.initWithFrame([[100, 100], [100, 100]], [10.0,10.0])
   end
 
   def will_appear

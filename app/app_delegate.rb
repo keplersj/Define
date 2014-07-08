@@ -21,7 +21,7 @@ class AppDelegate < PM::Delegate
 
     PM.logger.info 'Define has started.'
     startFlurry
-    open DefineScreen.new(nav_bar: false)
+    open DefineScreen.new(nav_bar: true)
 
   end
 

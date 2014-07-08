@@ -19,7 +19,17 @@
 
 class DefineScreen < PM::Screen
 
-  title 'Define'
+  title @define_term_field = UITextField.alloc.initWithFrame([[20, 7], [280, 30]])
+        @define_term_field.opaque = false
+        @define_term_field.clipsSubviews = true
+        @define_term_field.borderStyle = UITextBorderStyleRoundedRect
+        @define_term_field.clearsOnBeginEditing = true
+        @define_term_field.minimumFontSize = "17"
+        @define_term_field.clearButtonMode = UITextFieldViewModeAlways
+        @define_term_field.keyboardAppearance = UIKeyboardAppearanceDark
+        @define_term_field.returnKeyType = UIReturnKeySearch
+        @define_term_field.backgroundColor = 'black'.to_color
+        @define_term_field.textColor = 'white'.to_color
 
   def will_load
     #Telling the Engine to Turn On
@@ -28,9 +38,11 @@ class DefineScreen < PM::Screen
 
   def on_load
     set_attributes self.view, {
-        background_color: '#AAAAAA'.to_color
+      background_color: 'black'.to_color
     }
-    @term_text_view = add UITextView.alloc.initWithFrame([[100, 100], [100, 100]], [10.0,10.0])
+    set_attributes self.navigationController.navigationBar, {
+      bar_style: UIBarStyleBlack
+    }
   end
 
   def will_appear

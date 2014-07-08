@@ -22,7 +22,7 @@
     self.DictDirections.text = NSLocalizedString(@"Guide", @"iPad Guide Text");
     
     //We now have control over the keyboard
-    [DictionaryTermFiel setDelegate:self];\
+    [DictionaryTermFiel setDelegate:self];
 }
 
 - (void)viewDidUnload
@@ -30,8 +30,6 @@
     
     [self setDictionaryTermFiel:nil];
     [self setKeyboardSwipe:nil];
-    [super viewDidUnload];
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
     // Release any retained subviews of the main view.
 }
 
@@ -44,14 +42,6 @@
         return YES;
         return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
     }
-}
-
-- (void)displayDefinition: (NSNotification *)notification {
-    NSLog(@"Displaying the Definition");
-    NSDictionary *dict = [notification userInfo];
-    UIReferenceLibraryViewController *reference = [[UIReferenceLibraryViewController alloc] initWithTerm:dict];
-    [self presentViewController:reference animated:YES completion:NULL];
-
 }
 
 - (IBAction)KeyboardSwipeDown:(id)sender{

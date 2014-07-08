@@ -24,9 +24,6 @@ class DefineScreen < PM::Screen
   def will_load
     #Telling the Engine to Turn On
     AppleReference start_up
-
-    #Allowing the interface to recieve notifactions from the engine
-    App.notification_center.observe(name: 'displayDefinition', object: nil, selector: :displayDefinition)
   end
 
   def on_load
@@ -34,6 +31,22 @@ class DefineScreen < PM::Screen
         background_color: '#AAAAAA'.to_color
     }
     @term_text_view = add UITextView.alloc.initWithFrame([[100, 100], [300, 45]], [10.0,10.0])
+  end
+
+  def will_appear
+    #Allowing the interface to recieve notifactions from the engine
+    @definition_display_notification = App.notification_center.observe 'displayDefinition' do |notification|
+      disply_apple_reference notification.userInfo
+    end
+  end
+
+  def will_disappear
+    App.notification_center.unobserver @definition_display_notification
+  end
+
+  def display_apple_reference(term)
+    reference_view = UIReferenceLibraryViewController.alloc.initWithTerm term
+    self.presentViewController(self.reference_view, animated:true, completion:nil)
   end
 
 end

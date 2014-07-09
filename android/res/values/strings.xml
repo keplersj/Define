@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The application's name -->
+    <string name="app_name">Define</string>
+
+    <!-- Strings used on the main page when the app is used for the first time. -->
+    <string name="introduction">Welcome to Define!</string>
+    <string name="search">Search for a word to Define above.</string>
+    <string name="list">Pull the menu on the right for words that are avaliable to you.</string>
+</resources>

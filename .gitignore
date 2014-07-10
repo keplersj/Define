@@ -18,3 +18,4 @@ nbproject
 vendor
 .phrase
 *.lproj
+*.lock

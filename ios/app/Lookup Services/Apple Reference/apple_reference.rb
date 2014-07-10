@@ -19,7 +19,7 @@
 ##
 
 ## Contains methods nessacery for native functionality on Apple devices.
-class AppleReference < DefineReferenceSource
+class AppleReference < Define::Source
 
   ## Calls the Apple Reference Library to memory with a dumby term.
   def start_up

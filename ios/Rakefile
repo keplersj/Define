@@ -24,6 +24,8 @@ Motion::Project::App.setup do |app|
         'CFBundleURLSchemes' => ['define'] }
   ]
 
+  require '../lib/define'
+
   app.pods do
     pod 'FlurrySDK'
   end

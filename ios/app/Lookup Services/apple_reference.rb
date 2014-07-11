@@ -18,10 +18,10 @@
 ##  This code is licensed on MIT. https://raw.githubusercontent.com/k2b6s9j/Define/master/LICENSE
 ##
 
-## Contains methods nessacery for native functionality on Apple devices.
+## Contains methods needed for native functionality on Apple devices.
 class AppleReference < Define::Source
 
-  ## Calls the Apple Reference Library to memory with a dumby term.
+  ## Calls the Apple Reference Library to memory with a dummy term.
   def start_up
     UIReferenceLibraryViewController.alloc.initWithTerm('Kepler')
   end

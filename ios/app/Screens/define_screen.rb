@@ -3,7 +3,7 @@
 ##  Original Objective-C Implementation: DictonaryViewController.m
 ##  Original Xcode Project Name: Dictionary
 ##
-##  Initally Ported to Ruby As: define_view_controller.rb
+##  Initially Ported to Ruby As: define_view_controller.rb
 ##
 ##  define_screen.rb
 ##  Define
@@ -21,15 +21,14 @@ class DefineScreen < PM::Screen
 
   title $define_term_field = UITextField.alloc.initWithFrame([[20, 7], [280, 30]])
         $define_term_field.opaque = false
-        $define_term_field.clipsSubviews = true
         $define_term_field.borderStyle = UITextBorderStyleRoundedRect
         $define_term_field.clearsOnBeginEditing = true
-        $define_term_field.minimumFontSize = "17"
+        $define_term_field.minimumFontSize = '17'
         $define_term_field.clearButtonMode = UITextFieldViewModeAlways
         $define_term_field.keyboardAppearance = UIKeyboardAppearanceDark
         $define_term_field.returnKeyType = UIReturnKeySearch
-        $define_term_field.backgroundColor = 'black'.to_color
-        $define_term_field.textColor = 'white'.to_color
+        $define_term_field.backgroundColor = 'white'.to_color
+        $define_term_field.textColor = 'black'.to_color
 
   def will_load
     #Telling the Engine to Turn On
@@ -46,21 +45,23 @@ class DefineScreen < PM::Screen
   end
 
   def will_appear
-    #Allowing the interface to recieve notifactions from the engine
-    @definition_display_notification = App.notification_center.observe 'displayDefinition' do |notification|
+    #Allowing the interface to receive notifications from the engine
+    @display_notification = App.notification_center.observe 'displayDefinition' do |notification|
       display_apple_reference notification.userInfo
     end
 
     $define_term_field.delegate = self
+
+    $directional_arrow = add UIView
   end
 
   def will_disappear
-    App.notification_center.unobserver @definition_display_notification
+    App.notification_center.unobserve @display_notification
   end
 
   def textFieldShouldReturn(field)
-    if (field.text.length > 0)
-      AppleReference.look_up(field.text)
+    if field.text.length > 0
+      AppleReference.look_up(field.text.to_s)
       true
     else
       false
@@ -69,7 +70,7 @@ class DefineScreen < PM::Screen
 
   def display_apple_reference(term)
     reference_view = UIReferenceLibraryViewController.alloc.initWithTerm term
-    self.presentViewController(self.reference_view, animated:true, completion:nil)
+    self.presentViewController(reference_view, animated:true, completion:nil)
   end
 
 end

@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 $:.unshift('/Library/RubyMotion/lib')
 require 'motion/project/template/ios'
+require 'bundler'
 
-begin
-  require 'bundler'
-  Bundler.require
-rescue LoadError
-end
+Bundler.setup
+Bundler.require
+
 
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
@@ -24,7 +23,7 @@ Motion::Project::App.setup do |app|
         'CFBundleURLSchemes' => ['define'] }
   ]
 
-  require '../lib/define'
+  app.files << Dir.glob('../lib/**/*.rb')
 
   app.pods do
     pod 'FlurrySDK'
@@ -35,6 +34,10 @@ Motion::Project::App.setup do |app|
       app.phrase.enabled = true
       app.phrase.auth_token = 'eeddef8fbe65f23300c674fc23a1d4ee'
     end
+
+    app.entitlements['get-task-allow'] = true
+    app.codesign_certificate = 'iPhone Developer: Kepler Sticka-Jones (XC4RK3W595)'
+    app.provisioning_profile = './provisioning/Define_Mobile_Development_Profile.mobileprovision'
   end
 
 end

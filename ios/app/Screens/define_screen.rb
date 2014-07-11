@@ -48,7 +48,7 @@ class DefineScreen < PM::Screen
   def will_appear
     #Allowing the interface to recieve notifactions from the engine
     @definition_display_notification = App.notification_center.observe 'displayDefinition' do |notification|
-      disply_apple_reference notification.userInfo
+      display_apple_reference notification.userInfo
     end
 
     $define_term_field.delegate = self

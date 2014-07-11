@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-require 'bundler'
-
-Bundler.setup
-Bundler.require :default
-
 task :default => [:android, :ios, :web, :windows_phone]
 
 task :android do
@@ -13,10 +7,11 @@ task :android do
   task task.to_sym do ; end
 end
 
-if Dir.exist? '/Library/RubyMotion/lib'
-  import 'ios/Rakefile'
-
-  task 'build:simulator' => 'ios:build:simulator'
+task :ios do
+  task = ARGV.last
+  Dir.chdir 'ios'
+  system "rake #{task}"
+  task task.to_sym do ; end
 end
 
 task :web do

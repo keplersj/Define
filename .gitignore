@@ -19,4 +19,3 @@ vendor
 .phrase
 *.lproj
 *.lock
-ios/provisioning
